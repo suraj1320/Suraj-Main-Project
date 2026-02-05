@@ -1,0 +1,37 @@
+<header th:fragment="header">
+    <div class="container">
+        <div class="logo">SAGA BOOKS</div>
+        <nav
+            style="flex-grow: 1; display: flex; justify-content: space-between; align-items: center; margin-left: 3rem;">
+            <!-- Left Side: Main Menu -->
+            <ul style="display: flex; gap: 2rem; list-style: none; align-items: center;">
+                <li><a th:href="@{/}">Home</a></li>
+                <li><a th:href="@{/shop}">Shop</a></li>
+                <li><a th:href="@{/my-orders}">Orders</a></li>
+                <li><a th:href="@{/about}">About</a></li>
+                <li>
+                    <a th:href="@{/cart}" style="display: flex; align-items: center; gap: 5px;">
+                        Cart
+                        <span class="cart-count"
+                            style="background: var(--highlight-color); color: white; padding: 2px 6px; border-radius: 50%; font-size: 0.8rem;">0</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Right Side: Auth -->
+            <ul style="display: flex; gap: 1.5rem; list-style: none; align-items: center;">
+                <li th:if="${session.user == null}"><a th:href="@{/login}" class="btn-primary"
+                        style="padding: 5px 15px; font-size: 0.9rem; border-radius: 20px; background: #e67e22; border-color: #e67e22;">Login</a>
+                </li>
+                <li th:if="${session.user == null}"><a th:href="@{/register}" class="btn-primary"
+                        style="padding: 5px 15px; font-size: 0.9rem; border-radius: 20px;">Register</a></li>
+                <li>
+                    <a th:href="@{/admin}" class="btn-primary"
+                        style="padding: 5px 15px; font-size: 0.9rem; border-radius: 20px; background: #e74c3c; border-color: #c0392b;">Admin
+                        Panel</a>
+                </li>
+                <li th:if="${session.user != null}"><a th:href="@{/logout}">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

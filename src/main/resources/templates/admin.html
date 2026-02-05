@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: head}"></head>
+
+<body>
+
+    <header th:replace="~{fragments/header :: header}"></header>
+
+    <div class="container" style="padding-top: 100px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+            <h2 style="color: var(--accent-color);">COMMAND CENTER</h2>
+            <div style="display: flex; gap: 2rem; align-items: center;">
+                <div class="glass-panel"
+                    style="padding: 1rem 2rem; border: 1px solid var(--accent-color); border-radius: 12px;">
+                    <span
+                        style="display: block; font-size: 0.8rem; color: #7f8c8d; text-transform: uppercase; letter-spacing: 1px;">Total
+                        Inventory</span>
+                    <span style="font-size: 2rem; font-weight: 700; color: var(--text-color);"
+                        th:text="${bookCount}">0</span>
+                    <span style="font-size: 1rem; color: var(--text-muted);">Books</span>
+                </div>
+            </div>
+            <a th:href="@{/admin/add-book}" class="btn-primary">Add New Book</a>
+        </div>
+
+        <div class="glass-panel" style="padding: 2rem;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="book : ${books}">
+                        <td th:text="${book.id}">1</td>
+                        <td th:text="${book.title}">Book Title</td>
+                        <td th:text="${book.author}">Author Name</td>
+                        <td th:text="${book.category}">FICTION</td>
+                        <td th:text="${'$' + book.price}">$19.99</td>
+                        <td>
+                            <a th:href="@{'/admin/delete/' + ${book.id}}" class="btn-danger">Delete</a>
+                        </td>
+                    </tr>
+                    <tr th:if="${#lists.isEmpty(books)}">
+                        <td colspan="6" style="text-align: center; color: var(--text-muted); padding: 2rem;">No books in
+                            inventory.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer th:replace="~{fragments/footer :: footer}"></footer>
+
+</body>
+
+</html>

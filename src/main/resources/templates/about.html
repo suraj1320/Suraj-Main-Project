@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: head}"></head>
+
+<body>
+
+    <header th:replace="~{fragments/header :: header}"></header>
+
+    <!-- Custom Styles for About Page (Themed) -->
+    <style>
+        body {
+            /* Inherit global background but ensure it allows for shapes */
+            background: var(--bg-color);
+            color: var(--text-color);
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Animated Background Shapes (Themed Colors) */
+        .background-shapes {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.4;
+            /* Slightly lower opacity for light theme */
+            animation: float 20s infinite;
+        }
+
+        /* Using Theme Variable: Highlight Color (Orange/Red) */
+        .shape-1 {
+            top: -10%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background: var(--highlight-color);
+            animation-delay: 0s;
+        }
+
+        /* Using Theme Variable: Accent Color (Dark Blue) */
+        .shape-2 {
+            bottom: 20%;
+            right: -5%;
+            width: 400px;
+            height: 400px;
+            background: var(--accent-color);
+            animation-delay: -5s;
+        }
+
+        /* Complementary Soft Blue/Gray */
+        .shape-3 {
+            bottom: -10%;
+            left: 30%;
+            width: 300px;
+            height: 300px;
+            background: #bdc3c7;
+            animation-delay: -10s;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            33% {
+                transform: translate(30px, -50px) rotate(10deg);
+            }
+
+            66% {
+                transform: translate(-20px, 20px) rotate(-5deg);
+            }
+        }
+
+        /* Hero Section */
+        .hero-section {
+            height: 60vh;
+            /* Reduced slightly */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            perspective: 1000px;
+        }
+
+        .hero-title {
+            font-size: 5rem;
+            font-weight: 800;
+            /* Gradient using Theme Colors */
+            background: linear-gradient(to right, var(--accent-color), var(--highlight-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            animation: popIn 1.5s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+            opacity: 0;
+            transform: translateY(50px);
+            text-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            /* Softer shadow */
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            margin-top: 1rem;
+            opacity: 0;
+            animation: slideUp 1s ease 0.5s forwards;
+            font-weight: 600;
+        }
+
+        @keyframes popIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Glass Cards (Light Theme Adapted) */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            /* White Glass */
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+            /* Soft shadow */
+            transition: transform 0.1s;
+            transform-style: preserve-3d;
+        }
+
+        .content-section {
+            padding: 5rem 0;
+        }
+
+        /* 3D Tilt Effect Classes */
+        .tilt-box {
+            position: relative;
+            transition: all 0.1s ease;
+            transform-style: preserve-3d;
+        }
+
+        .tilt-inner {
+            transform: translateZ(30px);
+            /* Popping out effect */
+        }
+
+        /* Team Grid */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 4rem;
+        }
+
+        .team-card {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .team-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            border: 3px solid var(--border-light);
+            object-fit: cover;
+            box-shadow: var(--shadow-soft);
+            transition: 0.5s;
+        }
+
+        .team-card:hover .team-avatar {
+            transform: scale(1.1) rotate(5deg);
+            border-color: var(--highlight-color);
+            box-shadow: 0 0 20px rgba(231, 76, 60, 0.3);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+
+        /* Adjust footer margin for this page */
+        footer {
+            margin-top: 5rem;
+            background: #1a1a1a;
+            /* Match global footer */
+        }
+    </style>
+
+    <!-- Background Animation (Themed) -->
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container hero-section">
+        <div class="tilt-box" id="hero-tilt">
+            <h1 class="hero-title tilt-inner">SAGA UNIVERSE</h1>
+            <p class="hero-subtitle tilt-inner">Beyond Books. Beyond Imagination.</p>
+        </div>
+    </div>
+
+    <div class="container content-section">
+        <div class="glass-card" style="margin-bottom: 5rem;">
+            <div class="grid" style="grid-template-columns: 1fr 1fr; align-items: center; gap: 4rem;">
+                <div class="tilt-inner">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; color: var(--accent-color);">OUR GENESIS</h2>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-color); margin-bottom: 1.5rem;">
+                        Founded in 2024, SAGA was born from a simple yet powerful idea: that a bookstore should be as
+                        magical as the stories it holds.
+                        We didn't just want to sell books; we wanted to create a sanctuary for dreamers, thinkers, and
+                        creators.
+                    </p>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-color);">
+                        Using cutting-edge technology and a passion for design, we've built a platform that honors the
+                        timeless tradition of reading while embracing the future of digital experience.
+                    </p>
+                </div>
+                <div class="tilt-box" style="display: flex; justify-content: center;">
+                    <!-- Use a high quality image or icon that fits the theme -->
+                    <div
+                        style="font-size: 8rem; opacity: 0.8; animation: float 6s infinite ease-in-out; text-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+                        📚</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Specs / Stats -->
+        <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 5rem;">
+            <div class="glass-card" style="text-align: center;">
+                <div class="stat-number">180+</div>
+                <p style="color: var(--text-muted);">Curated Titles</p>
+            </div>
+            <div class="glass-card" style="text-align: center;">
+                <div class="stat-number">15+</div>
+                <p style="color: var(--text-muted);">Unique Categories</p>
+            </div>
+            <div class="glass-card" style="text-align: center;">
+                <div class="stat-number">24/7</div>
+                <p style="color: var(--text-muted);">Global Support</p>
+            </div>
+        </div>
+
+        <h2 style="text-align: center; font-size: 3rem; margin-bottom: 3rem; color: var(--accent-color);">THE VANGUARD
+        </h2>
+
+        <div class="team-grid">
+            <!-- Member 1 -->
+            <div class="team-card tilt-card">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80"
+                    alt="Suraj" class="team-avatar">
+                <h3>Suraj Parjapati</h3>
+                <p style="color: var(--highlight-color); font-weight: 600;">Founder & Visionary</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">"We are building the cathedral
+                    of the future."</p>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="team-card tilt-card">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80"
+                    alt="Sarah" class="team-avatar">
+                <h3>Sarah Matrix</h3>
+                <p style="color: var(--highlight-color); font-weight: 600;">Creative Director</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">"Design is intelligence made
+                    visible."</p>
+            </div>
+
+            <!-- Member 3 -->
+            <div class="team-card tilt-card">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80"
+                    alt="John" class="team-avatar">
+                <h3>John Cipher</h3>
+                <p style="color: var(--highlight-color); font-weight: 600;">Lead Architect</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">"Code is the poetry of the
+                    machine."</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer th:replace="~{fragments/footer :: footer}"></footer>
+
+    <!-- 3D Tilt Script (Kept Same) -->
+    <script>
+        document.addEventListener('mousemove', (e) => {
+            const tiltCards = document.querySelectorAll('.tilt-card, .glass-card, .tilt-box');
+
+            tiltCards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+
+                // Make effects slightly more subtle for light theme elegance
+                const rotateX = ((y - centerY) / centerY) * -3;
+                const rotateY = ((x - centerX) / centerX) * 3;
+
+                if (e.clientX > rect.left - 50 && e.clientX < rect.right + 50 &&
+                    e.clientY > rect.top - 50 && e.clientY < rect.bottom + 50) {
+                    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+                } else {
+                    card.style.transform = `perspective(1000px) rotateX(0) rotateY(0)`;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

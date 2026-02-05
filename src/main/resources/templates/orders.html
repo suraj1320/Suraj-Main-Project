@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: head}"></head>
+
+<body>
+
+    <header th:replace="~{fragments/header :: header}"></header>
+
+    <div class="container" style="padding-top: 120px;">
+        <h2 class="section-title">TRANSACTION LOG</h2>
+        <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">User: <span th:text="${username}"
+                style="color: var(--accent-color);"></span></p>
+
+        <div class="glass-panel" style="padding: 2rem; overflow-x: auto;">
+            <table style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Items</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="order : ${orders}">
+                        <td th:text="${order.id}">#123</td>
+                        <td th:text="${order.orderDate}">2026-01-01</td>
+                        <td>
+                            <ul style="list-style: none; padding: 0;">
+                                <li th:each="item : ${order.items}"
+                                    style="font-size: 0.9rem; color: var(--text-muted);">
+                                    <span th:text="${item.bookTitle}">Book Title</span>
+                                    (x<span th:text="${item.quantity}">1</span>)
+                                </li>
+                            </ul>
+                        </td>
+                        <td th:text="${'$' + order.totalAmount}" style="color: var(--accent-color); font-weight: bold;">
+                            $29.99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer th:replace="~{fragments/footer :: footer}"></footer>
+
+</body>
+
+</html>

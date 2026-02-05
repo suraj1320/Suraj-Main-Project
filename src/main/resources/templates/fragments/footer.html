@@ -1,0 +1,79 @@
+<footer th:fragment="footer"
+    style="background: #111; color: #eee; padding: 5rem 0 2rem; margin-top: 5rem; border-top: 4px solid var(--highlight-color);">
+    <div class="container"
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+
+        <!-- Brand & Owner -->
+        <div>
+            <div class="logo" style="margin-bottom: 1.5rem; color: #fff; font-size: 2rem;">SAGA<span
+                    style="color: var(--highlight-color);">.</span></div>
+            <p style="color: #aaa; margin-bottom: 1.5rem; line-height: 1.8;">
+                The ultimate destination for literary excellence. <br>
+                Owned & Curated by <strong style="color: #fff;">Suraj Parjapati</strong>.
+            </p>
+            <p style="margin-top: 1rem; color: #ccc;">
+                📍 Kalyan, Mumbai 421306<br>
+                ✉️ surajbhai90043@gmail.com
+            </p>
+            <!-- Social Icons -->
+            <div style="margin-top: 1.5rem; display: flex; gap: 15px;">
+                <a href="#"
+                    style="color: #fff; font-size: 1.2rem; background: #222; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: all 0.3s;">📘</a>
+                <a href="#"
+                    style="color: #fff; font-size: 1.2rem; background: #222; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: all 0.3s;">🐦</a>
+                <a href="#"
+                    style="color: #fff; font-size: 1.2rem; background: #222; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: all 0.3s;">📸</a>
+                <a href="#"
+                    style="color: #fff; font-size: 1.2rem; background: #222; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: all 0.3s;">👔</a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+            <h4 style="color: #fff; margin-bottom: 1.5rem; letter-spacing: 1px;">EXPLORE</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 0.8rem;"><a th:href="@{/shop}" style="color: #aaa; transition: 0.3s;">All
+                        Books Collection</a></li>
+                <li style="margin-bottom: 0.8rem;"><a th:href="@{/about}" style="color: #aaa; transition: 0.3s;">About
+                        Our Story</a></li>
+                <li style="margin-bottom: 0.8rem;"><a th:href="@{/shop?category=FICTION}"
+                        style="color: #aaa; transition: 0.3s;">Fiction Best Sellers</a></li>
+                <li style="margin-bottom: 0.8rem;"><a th:href="@{/shop?category=NON_FICTION}"
+                        style="color: #aaa; transition: 0.3s;">Non-Fiction Reads</a></li>
+            </ul>
+        </div>
+
+        <!-- Account -->
+        <div>
+            <h4 style="color: #fff; margin-bottom: 1.5rem; letter-spacing: 1px;">MY ACCOUNT</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 0.8rem;"><a th:href="@{/login}" style="color: #aaa; transition: 0.3s;">Sign
+                        In</a></li>
+                <li style="margin-bottom: 0.8rem;"><a th:href="@{/register}"
+                        style="color: #aaa; transition: 0.3s;">Create Account</a></li>
+                <li style="margin-bottom: 0.8rem;"><a th:href="@{/my-orders}"
+                        style="color: #aaa; transition: 0.3s;">Track My Orders</a></li>
+                <li style="margin-bottom: 0.8rem;"><a th:href="@{/cart}" style="color: #aaa; transition: 0.3s;">View
+                        Cart</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div>
+            <h4 style="color: #fff; margin-bottom: 1.5rem; letter-spacing: 1px;">STAY IN THE LOOP</h4>
+            <p style="color: #aaa; margin-bottom: 1.5rem;">Join 15,000+ readers getting monthly book recommendations.
+            </p>
+            <form style="display: flex; gap: 0.5rem;">
+                <input type="email" placeholder="Your email address" class="form-control"
+                    style="background: rgba(255,255,255,0.05); border: 1px solid #333; color: white; border-radius: 30px; padding: 12px 20px;">
+                <button class="btn-primary" style="padding: 12px 20px; border-radius: 30px;">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div style="text-align: center; border-top: 1px solid #222; padding-top: 2rem; margin-top: 2rem;">
+        <p style="color: #666; font-size: 0.9rem;">&copy; 2026 SAGA Book Store &middot; Privacy Policy &middot; Terms of
+            Service</p>
+    </div>
+</footer>

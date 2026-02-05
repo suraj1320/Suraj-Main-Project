@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: head}"></head>
+
+<body>
+
+    <header th:replace="~{fragments/header :: header}"></header>
+
+    <div class="container" style="padding-top: 120px; max-width: 800px;">
+        <h2 class="section-title">YOUR SELECTIONS</h2>
+
+        <div class="glass-panel" style="padding: 2rem;">
+            <div id="empty-cart-msg" style="text-align: center; display: none;">
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">Your cart is empty.</p>
+                <a th:href="@{/shop}" class="btn-primary">Browse Collection</a>
+            </div>
+
+            <div id="cart-content">
+                <table style="width: 100%; margin-bottom: 2rem;">
+                    <thead>
+                        <tr>
+                            <th>Book</th>
+                            <th style="text-align: right;">Price</th>
+                            <th style="text-align: right;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                        <!-- Items injected by JS -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td style="padding-top: 1rem; font-weight: bold;">TOTAL</td>
+                            <td id="cart-total"
+                                style="text-align: right; padding-top: 1rem; color: var(--accent-color); font-weight: bold;">
+                                $0.00</td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <div style="text-align: right;">
+                    <button id="checkout-btn" class="btn-primary">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer th:replace="~{fragments/footer :: footer}"></footer>
+
+</body>
+
+</html>

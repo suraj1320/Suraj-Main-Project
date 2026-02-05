@@ -1,0 +1,449 @@
+:root {
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-color: #2c3e50;
+    --text-muted: #7f8c8d;
+    --accent-color: #2c3e50;
+    /* Deep Charcoal/Blue for elegance */
+    --highlight-color: #e74c3c;
+    /* Professional Red/Orange for CTAs */
+    --border-color: #eec;
+    --border-light: #eaeaea;
+    --font-main: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    --font-heading: 'Playfair Display', 'Georgia', serif;
+    /* Serif for headers gives premium feel */
+    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--highlight-color);
+}
+
+/* Utilities */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: #fff;
+    padding: 1.2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    color: var(--accent-color);
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav ul li a {
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #555;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--highlight-color);
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Slider Styles */
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+    /* Darken images slightly for text legibility */
+}
+
+.slide .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background: rgba(0, 0, 0, 0.3) !important;
+    color: white !important;
+    border: none !important;
+    padding: 15px 20px !important;
+    cursor: pointer !important;
+    font-size: 2rem !important;
+    z-index: 10 !important;
+    transition: background 0.3s;
+    border-radius: 4px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Buttons */
+.btn-primary {
+    display: inline-block;
+    background: var(--highlight-color);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+    background: #c0392b;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+}
+
+.btn-danger {
+    background: #e74c3c;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 2px;
+    border: none;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+/* Product Grid */
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    margin: 4rem 0 3rem;
+    position: relative;
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--accent-color);
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--highlight-color);
+    margin: 1rem auto 0;
+    border-radius: 2px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    padding-bottom: 4rem;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-soft);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    border-color: rgba(0, 0, 0, 0.05);
+}
+
+.card-img-placeholder {
+    height: 280px;
+    background: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #ddd;
+}
+
+.card-body {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-main);
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.price {
+    display: block;
+    font-size: 1.3rem;
+    color: var(--highlight-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-family: var(--font-main);
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 5rem 0 2rem;
+    margin-top: 5rem;
+}
+
+footer h4 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+footer p,
+footer a {
+    color: #aaa;
+    font-size: 0.95rem;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer .logo {
+    color: #fff;
+}
+
+footer ul li {
+    margin-bottom: 0.8rem;
+}
+
+/* Form Styles */
+.form-control {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+/* Toast Notification */
+#toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1001;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#toast.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+/* Cart Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-bottom: 2px solid #ddd;
+}
+
+td {
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+/* Category Grid Styles */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.category-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    /* Slightly rounded corners */
+    padding: 2.5rem 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-color: var(--highlight-color);
+}
+
+.category-icon {
+    font-size: 2.5rem;
+    /* Large icon size */
+    margin-bottom: 1rem;
+    color: #007bff;
+    /* Blue icon color as requested */
+    line-height: 1;
+}
+
+.category-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
