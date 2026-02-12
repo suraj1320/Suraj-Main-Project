@@ -64,18 +64,7 @@ public class DataSeeder implements CommandLineRunner {
         }
 
         private void seedUsers() {
-                // Ensure Admin
-                User admin = userService.findByUsername("admin");
-                if (admin == null) {
-                        admin = new User();
-                        admin.setUsername("admin");
-                }
-                admin.setPassword("admin"); // Service handles encoding
-                admin.setRole("ADMIN");
-                // Ensure email is set cleanly
-                admin.setEmail("admin@saga.com");
-
-                userService.registerUser(admin);
+                // Admin user creation removed as per request
 
                 // Ensure User
                 User user = userService.findByUsername("user");
