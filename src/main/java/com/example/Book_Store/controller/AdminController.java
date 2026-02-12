@@ -6,6 +6,8 @@ import com.example.Book_Store.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
@@ -13,12 +15,12 @@ import org.springframework.web.bind.annotation.*;
 public class AdminController {
 
     @Autowired
-    private BookRepository bookRepository;
+    private com.example.Book_Store.service.BookService bookService;
 
     @GetMapping
     public String adminDashboard(Model model) {
-        model.addAttribute("books", bookRepository.findAll());
-        model.addAttribute("bookCount", bookRepository.count());
+        model.addAttribute("books", bookService.getAllBooks());
+        model.addAttribute("bookCount", bookService.count());
         return "admin";
     }
 
@@ -30,18 +32,40 @@ public class AdminController {
     }
 
     @PostMapping("/add-book")
-    public String addBook(@ModelAttribute Book book) {
-        // Since we are skipping service layer, saving directly
-        // Image handling would typically go here (upload to folder),
-        // but for simplicity we might just expect a URL or handle basic logic later if
-        // requested
-        bookRepository.save(book);
+    public String addBook(@Valid @ModelAttribute Book book, BindingResult result, Model model) {
+        if (result.hasErrors()) {
+            model.addAttribute("categories", Category.values());
+            return "add-book";
+        }
+        bookService.saveBook(book);
+        return "redirect:/admin";
+    }
+
+    @GetMapping("/edit-book/{id}")
+    public String showEditBookForm(@PathVariable Long id, Model model) {
+        Book book = bookService.getBookById(id)
+                .orElseThrow(() -> new IllegalArgumentException("Invalid book Id:" + id));
+        model.addAttribute("book", book);
+        model.addAttribute("categories", Category.values());
+        return "add-book"; // Reusing the add-book form
+    }
+
+    @PostMapping("/update-book/{id}")
+    public String updateBook(@PathVariable Long id, @Valid @ModelAttribute Book book, BindingResult result,
+            Model model) {
+        if (result.hasErrors()) {
+            model.addAttribute("categories", Category.values());
+            book.setId(id); // Keep ID so form submits to correct URL
+            return "add-book";
+        }
+        book.setId(id);
+        bookService.saveBook(book);
         return "redirect:/admin";
     }
 
     @GetMapping("/delete/{id}")
     public String deleteBook(@PathVariable Long id) {
-        bookRepository.deleteById(id);
+        bookService.deleteBook(id);
         return "redirect:/admin";
     }
 }

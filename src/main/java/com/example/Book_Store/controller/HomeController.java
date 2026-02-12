@@ -8,6 +8,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class HomeController {
@@ -27,20 +31,31 @@ public class HomeController {
         return "home";
     }
 
-    @org.springframework.web.bind.annotation.GetMapping("/shop")
+    @GetMapping("/shop")
     public String shop(Model model,
-            @org.springframework.web.bind.annotation.RequestParam(value = "keyword", required = false) String keyword,
-            @org.springframework.web.bind.annotation.RequestParam(value = "category", required = false) com.example.Book_Store.model.enums.Category category) {
-        List<Book> books;
+            @RequestParam(value = "keyword", required = false) String keyword,
+            @RequestParam(value = "category", required = false) com.example.Book_Store.model.enums.Category category,
+            @RequestParam(value = "page", defaultValue = "0") int page,
+            @RequestParam(value = "size", defaultValue = "12") int size) {
+
+        Pageable pageable = PageRequest.of(page, size);
+        Page<Book> books;
+
         if (keyword != null && !keyword.isEmpty()) {
-            books = bookRepository.search(keyword);
+            books = bookRepository.search(keyword, pageable);
         } else if (category != null) {
-            books = bookRepository.findByCategory(category);
+            books = bookRepository.findByCategory(category, pageable);
         } else {
-            books = bookRepository.findAll();
+            books = bookRepository.findAll(pageable);
         }
+
         model.addAttribute("books", books);
         model.addAttribute("categories", com.example.Book_Store.model.enums.Category.values());
+        model.addAttribute("currentPage", page);
+        model.addAttribute("totalPages", books.getTotalPages());
+        model.addAttribute("keyword", keyword);
+        model.addAttribute("category", category);
+
         return "shop";
     }
 
@@ -49,8 +64,4 @@ public class HomeController {
         return "about";
     }
 
-    @org.springframework.web.bind.annotation.GetMapping("/cart")
-    public String cart() {
-        return "cart";
-    }
 }

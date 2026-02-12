@@ -447,3 +447,10 @@ td {
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
+
+.text-danger {
+    color: #e74c3c !important;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    display: block;
+}

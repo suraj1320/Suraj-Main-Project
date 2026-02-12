@@ -44,7 +44,10 @@
                         <td th:text="${book.category}">FICTION</td>
                         <td th:text="${'$' + book.price}">$19.99</td>
                         <td>
-                            <a th:href="@{'/admin/delete/' + ${book.id}}" class="btn-danger">Delete</a>
+                            <a th:href="@{'/admin/edit-book/' + ${book.id}}" class="btn-primary"
+                                style="padding: 5px 10px; font-size: 0.8rem; margin-right: 5px;">Edit</a>
+                            <a th:href="@{'/admin/delete/' + ${book.id}}" class="btn-danger"
+                                style="padding: 5px 10px; font-size: 0.8rem;">Delete</a>
                         </td>
                     </tr>
                     <tr th:if="${#lists.isEmpty(books)}">

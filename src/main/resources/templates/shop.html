@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
 <head th:replace="~{fragments/head :: head}"></head>
 
@@ -32,6 +32,11 @@
         <div style="flex-grow: 1;">
             <h2 class="section-title" style="margin-top: 0; text-align: left;">ALL COLLECTIONS</h2>
 
+            <div th:if="${error}"
+                style="background: rgba(231, 76, 60, 0.2); border: 1px solid #e74c3c; color: #e74c3c; padding: 1rem; border-radius: 5px; margin-bottom: 2rem;">
+                <span th:text="${error}"></span>
+            </div>
+
             <div class="grid">
                 <div class="card glass" th:each="book : ${books}">
                     <div class="card-img-placeholder" th:if="${book.image == null or book.image == ''}">
@@ -44,11 +49,43 @@
                         <span class="price" th:text="${'$' + book.price}">$29.99</span>
                         <h3 th:text="${book.title}">The Future is Now</h3>
                         <p th:text="${book.author}">By Author Name</p>
-                        <a href="#" class="btn-primary add-to-cart" th:data-id="${book.id}"
-                            th:data-title="${book.title}" th:data-price="${book.price}"
-                            style="font-size: 0.8rem; padding: 8px 16px;">Add to Cart</a>
+                        <button class="btn-primary"
+                            th:onclick="addToCartGlobal([[${book.id}]], [[${book.title}]], [[${book.price}]], [[${book.image}]])"
+                            sec:authorize="isAuthenticated()"
+                            style="font-size: 0.8rem; padding: 8px 16px; width: 100%; border: none; cursor: pointer;">Add
+                            to Cart</button>
+
+                        <a th:href="@{/login}" class="btn-primary" sec:authorize="isAnonymous()"
+                            style="font-size: 0.8rem; padding: 8px 16px; background-color: #95a5a6; border-color: #95a5a6;">Login
+                            to Add</a>
+                        <!-- Debug Info -->
+                        <span style="font-size: 10px; color: red;"
+                            th:text="${book.image != null ? book.image : 'No Image'}"></span>
                     </div>
                 </div>
+            </div>
+
+            <!-- Pagination -->
+            <div th:if="${totalPages > 1}"
+                style="width: 100%; display: flex; justify-content: center; margin-top: 2rem; padding-bottom: 2rem;">
+                <ul style="display: flex; list-style: none; gap: 10px; align-items: center;">
+                    <li>
+                        <a th:href="@{/shop(page=${currentPage - 1}, keyword=${keyword}, category=${category})}"
+                            class="btn-primary"
+                            th:style="${currentPage == 0} ? 'pointer-events: none; opacity: 0.5;' : ''">Previous</a>
+                    </li>
+
+                    <li th:each="i : ${#numbers.sequence(0, totalPages - 1)}">
+                        <a th:href="@{/shop(page=${i}, keyword=${keyword}, category=${category})}" th:text="${i + 1}"
+                            class="btn-primary" th:style="${currentPage == i} ? 'background-color: #333;' : ''">1</a>
+                    </li>
+
+                    <li>
+                        <a th:href="@{/shop(page=${currentPage + 1}, keyword=${keyword}, category=${category})}"
+                            class="btn-primary"
+                            th:style="${currentPage == totalPages - 1} ? 'pointer-events: none; opacity: 0.5;' : ''">Next</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>

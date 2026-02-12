@@ -1,4 +1,4 @@
-<header th:fragment="header">
+<header th:fragment="header" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
     <div class="container">
         <div class="logo">SAGA BOOKS</div>
         <nav
@@ -16,22 +16,33 @@
                             style="background: var(--highlight-color); color: white; padding: 2px 6px; border-radius: 50%; font-size: 0.8rem;">0</span>
                     </a>
                 </li>
-            </ul>
+                <!-- Search Bar -->
+                <form th:action="@{/shop}" method="get"
+                    style="display: flex; align-items: center; background: rgba(255, 255, 255, 0.1); padding: 5px 15px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.2);">
+                    <input type="text" name="keyword" placeholder="Search titles..."
+                        style="background: transparent; border: none; outline: none; color: white; margin-right: 10px; width: 150px; font-size: 0.9rem;">
+                    <button type="submit"
+                        style="background: none; border: none; color: white; cursor: pointer; font-size: 1.1rem;">🔍</button>
+                </form>
 
-            <!-- Right Side: Auth -->
-            <ul style="display: flex; gap: 1.5rem; list-style: none; align-items: center;">
-                <li th:if="${session.user == null}"><a th:href="@{/login}" class="btn-primary"
-                        style="padding: 5px 15px; font-size: 0.9rem; border-radius: 20px; background: #e67e22; border-color: #e67e22;">Login</a>
-                </li>
-                <li th:if="${session.user == null}"><a th:href="@{/register}" class="btn-primary"
-                        style="padding: 5px 15px; font-size: 0.9rem; border-radius: 20px;">Register</a></li>
-                <li>
-                    <a th:href="@{/admin}" class="btn-primary"
-                        style="padding: 5px 15px; font-size: 0.9rem; border-radius: 20px; background: #e74c3c; border-color: #c0392b;">Admin
-                        Panel</a>
-                </li>
-                <li th:if="${session.user != null}"><a th:href="@{/logout}">Logout</a></li>
-            </ul>
+                <!-- Right Side: Auth -->
+                <ul style="display: flex; gap: 1.5rem; list-style: none; align-items: center;">
+                    <li sec:authorize="isAnonymous()"><a th:href="@{/login}" class="btn-primary"
+                            style="padding: 5px 15px; font-size: 0.9rem; border-radius: 20px; background: #e67e22; border-color: #e67e22;">Login</a>
+                    </li>
+                    <li sec:authorize="isAnonymous()"><a th:href="@{/register}" class="btn-primary"
+                            style="padding: 5px 15px; font-size: 0.9rem; border-radius: 20px;">Register</a></li>
+                    <li sec:authorize="hasRole('ADMIN')">
+                        <a th:href="@{/admin}" class="btn-primary"
+                            style="padding: 5px 15px; font-size: 0.9rem; border-radius: 20px; background: #e74c3c; border-color: #c0392b;">Admin
+                            Panel</a>
+                    </li>
+                    <li sec:authorize="isAuthenticated()">
+                        <span style="color: white; margin-right: 10px;">Welcome, <span
+                                sec:authentication="name">User</span></span>
+                    </li>
+                    <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
+                </ul>
         </nav>
     </div>
 </header>

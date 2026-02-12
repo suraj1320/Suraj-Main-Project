@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Order Success</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #2c3e50;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .success-container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #2ecc71;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #bdc3c7;
+        }
+
+        .btn-home {
+            background: transparent;
+            border: 2px solid #2ecc71;
+            color: #2ecc71;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-home:hover {
+            background: #2ecc71;
+            color: white;
+        }
+
+        /* Confetti */
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #f2d74e;
+            animation: fall linear forwards;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="success-container">
+        <h1>🎉 Order Placed!</h1>
+        <p>Thank you for your purchase.</p>
+        <a th:href="@{/}" class="btn-home">Continue Shopping</a>
+    </div>
+
+    <script>
+        // Clear LocalStorage Cart
+        localStorage.removeItem('saga_cart');
+
+        // Simple Confetti Script
+        const colors = ['#e74c3c', '#3498db', '#f1c40f', '#2ecc71', '#9b59b6'];
+
+        function createConfetti() {
+            const confetti = document.createElement('div');
+            confetti.classList.add('confetti');
+            document.body.appendChild(confetti);
+
+            const left = Math.random() * 100 + 'vw';
+            const animDuration = Math.random() * 3 + 2 + 's';
+            const color = colors[Math.floor(Math.random() * colors.length)];
+
+            confetti.style.left = left;
+            confetti.style.top = '-10px';
+            confetti.style.backgroundColor = color;
+            confetti.style.animationDuration = animDuration;
+
+            // Randomize keyframes for fall
+            const keyframes = `
+                to {
+                    transform: translateY(110vh) rotate(${Math.random() * 360}deg);
+                }
+            `;
+            // Simplified animation handling
+
+            confetti.animate([
+                { transform: 'translateY(0) rotate(0deg)', opacity: 1 },
+                { transform: `translateY(100vh) rotate(${Math.random() * 720}deg)`, opacity: 0 }
+            ], {
+                duration: Math.random() * 2000 + 1500,
+                easing: 'linear',
+                fill: 'forwards'
+            });
+
+            setTimeout(() => { confetti.remove(); }, 4000);
+        }
+
+        setInterval(createConfetti, 100);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: head}"></head>
+
+<body>
+
+    <header th:replace="~{fragments/header :: header}"></header>
+
+    <div class="container" style="padding-top: 120px; max-width: 900px;">
+        <h2 class="section-title">SELECT SHIPPING ADDRESS</h2>
+
+        <div class="glass-panel" style="padding: 2rem;">
+
+            <form th:action="@{/checkout/summary}" method="post">
+                <div class="address-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+
+                    <div th:if="${addresses.empty}"
+                        style="grid-column: 1 / -1; text-align: center; color: #bdc3c7; padding: 2rem; background: rgba(255,255,255,0.05); border-radius: 10px;">
+                        <p style="margin: 0; font-size: 1.1rem;">No addresses found. Please add a shipping address
+                            below.</p>
+                    </div>
+
+                    <div th:each="addr : ${addresses}" class="address-card"
+                        style="background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); cursor: pointer; position: relative;">
+                        <input type="radio" name="addressId" th:value="${addr.id}" required
+                            style="position: absolute; top: 1rem; right: 1rem;">
+                        <p style="font-weight: bold; margin-bottom: 0.5rem;"
+                            th:text="${user.firstName + ' ' + user.lastName}"></p>
+                        <p th:text="${addr.street}"></p>
+                        <p th:text="${addr.city + ', ' + addr.state + ' ' + addr.zipCode}"></p>
+                    </div>
+
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <button type="button" class="btn-primary" onclick="toggleAddressForm()">+ Add New Address</button>
+                </div>
+
+                <div id="address-form-container"
+                    style="display: none; background: rgba(0,0,0,0.2); padding: 1.5rem; border-radius: 10px; margin-bottom: 2rem;">
+                    <h4 style="margin-top: 0; color: var(--accent-color);">New Address Details</h4>
+
+                    <!-- We use a separate form or JS to submit this? 
+                         Actually, let's use a separate hidden form or a nested form approach? 
+                         Nested forms are invalid. 
+                         So "Add Address" should be a separate form action or just inputs that we process?
+                         Let's make "Add New Address" just toggle fields fields that, if filled, we use separate endpoint or same?
+                         The controller has /checkout/address/add. 
+                         So let's make the "Add New Address" section a separate FORM that posts to /checkout/address/add.
+                    -->
+                </div>
+
+                <div style="text-align: right;">
+                    <button type="submit" class="btn-primary" style="padding: 1rem 3rem;">Proceed to Summary</button>
+                </div>
+            </form>
+
+            <form id="new-address-form" th:action="@{/checkout/address/add}" method="post"
+                style="display: none; background: rgba(0,0,0,0.2); padding: 1.5rem; border-radius: 10px; margin-bottom: 2rem; margin-top: -5rem; position: relative; z-index: 10;">
+                <h4 style="margin-top: 0; color: var(--accent-color); margin-bottom: 1rem;">New Address Details</h4>
+                <div class="form-group" style="margin-bottom: 1rem;">
+                    <label>Street Address</label>
+                    <input type="text" name="street" class="form-control" required
+                        style="width: 100%; padding: 0.8rem; border-radius: 5px; border: none;">
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                    <div class="form-group">
+                        <label>City</label>
+                        <input type="text" name="city" class="form-control" required
+                            style="width: 100%; padding: 0.8rem; border-radius: 5px; border: none;">
+                    </div>
+                    <div class="form-group">
+                        <label>State</label>
+                        <input type="text" name="state" class="form-control" required
+                            style="width: 100%; padding: 0.8rem; border-radius: 5px; border: none;">
+                    </div>
+                </div>
+                <div class="form-group" style="margin-bottom: 1rem;">
+                    <label>Zip Code</label>
+                    <input type="text" name="zipCode" class="form-control" required
+                        style="width: 100%; padding: 0.8rem; border-radius: 5px; border: none;">
+                </div>
+                <button type="submit" class="btn-primary">Save Address</button>
+                <button type="button" class="btn-danger" style="margin-left: 1rem; padding: 0.8rem 1.5rem;"
+                    onclick="toggleAddressForm()">Cancel</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script>
+        function toggleAddressForm() {
+            const form = document.getElementById('new-address-form');
+            if (form.style.display === 'none') {
+                form.style.display = 'block';
+            } else {
+                form.style.display = 'none';
+            }
+        }
+    </script>
+
+    <footer th:replace="~{fragments/footer :: footer}"></footer>
+</body>
+
+</html>

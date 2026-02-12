@@ -3,8 +3,9 @@ package com.example.Book_Store.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "customer_order_items")
-public class OrderItem {
+@Table(name = "cart_items")
+public class CartItem {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -14,13 +15,17 @@ public class OrderItem {
     private Book book;
 
     @ManyToOne
-    @JoinColumn(name = "order_id")
-    private Order order;
+    @JoinColumn(name = "cart_id")
+    private Cart cart;
 
     private int quantity;
-    private double price;
 
-    public OrderItem() {
+    public CartItem() {
+    }
+
+    public CartItem(Book book, int quantity) {
+        this.book = book;
+        this.quantity = quantity;
     }
 
     public Long getId() {
@@ -39,12 +44,12 @@ public class OrderItem {
         this.book = book;
     }
 
-    public Order getOrder() {
-        return order;
+    public Cart getCart() {
+        return cart;
     }
 
-    public void setOrder(Order order) {
-        this.order = order;
+    public void setCart(Cart cart) {
+        this.cart = cart;
     }
 
     public int getQuantity() {
@@ -53,13 +58,5 @@ public class OrderItem {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
     }
 }

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: head}"></head>
+
+<body>
+
+    <header th:replace="~{fragments/header :: header}"></header>
+
+    <div class="container" style="padding-top: 120px; max-width: 900px;">
+        <h2 class="section-title">SECURE CHECKOUT</h2>
+
+        <div class="grid" style="grid-template-columns: 1.5fr 1fr; gap: 2rem;">
+            <!-- Shipping Form -->
+            <div class="glass-panel" style="padding: 2rem;">
+                <h3 style="margin-bottom: 1.5rem; color: var(--accent-color);">Shipping Details</h3>
+
+                <form id="checkout-form" th:action="@{/place-order}" method="post">
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" name="firstName" th:value="${user.firstName}" class="form-control"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" name="lastName" th:value="${user.lastName}" class="form-control"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" name="phoneNumber" th:value="${user.phoneNumber}" class="form-control"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Shipping Address</label>
+                        <input type="text" name="address" th:value="${user.address}" class="form-control"
+                            placeholder="Street Address, Apt, Suite" required>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div class="form-group">
+                            <label>City</label>
+                            <input type="text" name="city" th:value="${user.city}" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>State</label>
+                            <select name="state" class="form-control" required>
+                                <option value="" disabled selected>Select State</option>
+                                <option th:each="state : ${states}" th:value="${state}" th:text="${state.displayName}"
+                                    th:selected="${user.state != null and user.state == state.name()}"></option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Zip Code</label>
+                            <input type="text" name="zipCode" th:value="${user.zipCode}" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <!-- Hidden Input for Cart Data (populated by JS) -->
+                    <input type="hidden" name="cartJson" id="cart-json">
+
+                    <button type="submit" class="btn-primary" style="width: 100%; margin-top: 1rem;">Confirm &
+                        Pay</button>
+                    <p style="text-align: center; font-size: 0.8rem; margin-top: 10px; color: #7f8c8d;">Secure Encrypted
+                        Transaction</p>
+                </form>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="glass-panel" style="padding: 2rem; height: fit-content;">
+                <h3 style="margin-bottom: 1.5rem; color: var(--accent-color);">Order Summary</h3>
+                <div id="checkout-summary">
+                    <!-- Items populated by JS -->
+                </div>
+                <div
+                    style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 1rem; padding-top: 1rem; display: flex; justify-content: space-between; font-weight: bold; font-size: 1.2rem;">
+                    <span>Total</span>
+                    <span id="checkout-total">$0.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cart = JSON.parse(localStorage.getItem('saga_cart')) || [];
+            if (cart.length === 0) {
+                window.location.href = '/shop';
+                return;
+            }
+
+            // Populate Summary
+            const summaryContainer = document.getElementById('checkout-summary');
+            let total = 0;
+
+            cart.forEach(item => {
+                total += parseFloat(item.price);
+                const div = document.createElement('div');
+                div.style.display = 'flex';
+                div.style.justifyContent = 'space-between';
+                div.style.marginBottom = '10px';
+                div.innerHTML = `<span>${item.title}</span> <span>$${parseFloat(item.price).toFixed(2)}</span>`;
+                summaryContainer.appendChild(div);
+            });
+
+            document.getElementById('checkout-total').textContent = '$' + total.toFixed(2);
+            document.getElementById('cart-json').value = JSON.stringify(cart);
+
+            // Handle Form Submit
+            document.getElementById('checkout-form').addEventListener('submit', function (e) {
+                // Let the form submit naturally to the backend
+                // optionally clear cart on success, but since it's a form post, 
+                // we might need to clear it on the success page or via a hook.
+                // For this strictly server-side flow, we can clear it if we redirect to a success page that has a script.
+                // Or better: submit via fetch?
+                // Let's stick to form submission for simplicity and robustness, 
+                // but we need to pass the Cart JSON string.
+            });
+        });
+    </script>
+
+    <footer th:replace="~{fragments/footer :: footer}"></footer>
+
+</body>
+
+</html>

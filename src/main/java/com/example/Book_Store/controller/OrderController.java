@@ -4,54 +4,43 @@ import com.example.Book_Store.model.Order;
 import com.example.Book_Store.model.OrderItem;
 import com.example.Book_Store.model.User;
 import com.example.Book_Store.repository.OrderRepository;
-import jakarta.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Controller
 public class OrderController {
 
     @Autowired
-    private OrderRepository orderRepository;
+    private com.example.Book_Store.service.OrderService orderService;
 
-    @PostMapping("/checkout")
-    @ResponseBody
-    public String checkout(@RequestBody List<OrderItem> items, HttpSession session) {
-        User user = (User) session.getAttribute("user");
-        if (user == null) {
-            return "REDIRECT_LOGIN"; // Handled by JS
-        }
+    @Autowired
+    private com.example.Book_Store.service.UserService userService;
 
-        Order order = new Order();
-        order.setCustomerName(user.getUsername());
-        order.setItems(items);
+    // Checkout logic moved to CheckoutController
 
-        double total = items.stream().mapToDouble(i -> i.getPrice() * i.getQuantity()).sum();
-        order.setTotalAmount(total);
+    // Checkout logic moved to CheckoutController
 
-        orderRepository.save(order);
+    // Payment handled by PaymentController
 
-        return "SUCCESS";
+    @GetMapping("/order-success")
+    public String orderSuccess() {
+        return "order-success";
     }
 
     @GetMapping("/my-orders")
-    public String myOrders(HttpSession session, Model model) {
-        User user = (User) session.getAttribute("user");
-        if (user == null)
+    public String myOrders(java.security.Principal principal, Model model) {
+        if (principal == null)
             return "redirect:/login";
 
-        // Ideally fetch by user ID, but simplifying for now with findAll filtering or
-        // similar if we added User relation to Order
-        // For strictness, let's assume we show all orders matching name for now or
-        // refactor Repo if needed.
-        // Given constraints, showing all orders to admin or implementing basics
-        // Let's rely on JPA to fetch by customerName if we just add it to Repo?
-        // Or simpler: just list all for now since its a demo
-        model.addAttribute("orders", orderRepository.findAll());
+        User user = userService.findByUsername(principal.getName());
+
+        model.addAttribute("orders", orderService.getOrdersByUser(user));
         model.addAttribute("username", user.getUsername());
 
         return "orders";
