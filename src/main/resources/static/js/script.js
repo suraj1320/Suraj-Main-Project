@@ -80,6 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('saga_cart', JSON.stringify(cart));
         updateCartCount(); // Fixed function name from updateCartCount to updateCartCount (it is correct)
         showToast(`${title} added to cart!`);
+        window.location.href = '/cart';
     };
 
     document.body.addEventListener('click', (e) => {

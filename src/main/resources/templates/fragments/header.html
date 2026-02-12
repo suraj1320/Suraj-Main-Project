@@ -9,6 +9,7 @@
                 <li><a th:href="@{/shop}">Shop</a></li>
                 <li><a th:href="@{/my-orders}">My Orders</a></li>
                 <li><a th:href="@{/about}">About</a></li>
+                <li><a th:href="@{/contact}">Contact</a></li>
                 <li>
                     <a th:href="@{/cart}" style="display: flex; align-items: center; gap: 5px;">
                         Cart
@@ -22,26 +23,27 @@
                         Clear Cart
                     </button>
                 </li>
+            </ul>
 
-
-                <!-- Right Side: Auth -->
-                <ul style="display: flex; gap: 1.5rem; list-style: none; align-items: center;">
-                    <li sec:authorize="isAnonymous()"><a th:href="@{/login}" class="btn-primary"
-                            style="padding: 5px 15px; font-size: 0.9rem; border-radius: 20px; background: #e67e22; border-color: #e67e22;">Login</a>
-                    </li>
-                    <li sec:authorize="isAnonymous()"><a th:href="@{/register}" class="btn-primary"
-                            style="padding: 5px 15px; font-size: 0.9rem; border-radius: 20px;">Register</a></li>
-                    <li sec:authorize="hasRole('ADMIN')">
-                        <a th:href="@{/admin}" class="btn-primary"
-                            style="padding: 5px 15px; font-size: 0.9rem; border-radius: 20px; background: #e74c3c; border-color: #c0392b;">Admin
-                            Panel</a>
-                    </li>
-                    <li sec:authorize="isAuthenticated()">
-                        <span style="color: white; margin-right: 10px;">Welcome, <span
-                                sec:authentication="name">User</span></span>
-                    </li>
-                    <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
-                </ul>
+            <!-- Right Side: Auth -->
+            <ul style="display: flex; gap: 1.5rem; list-style: none; align-items: center;">
+                <li sec:authorize="isAnonymous()"><a th:href="@{/login}" class="btn-primary"
+                        style="padding: 5px 15px; font-size: 0.9rem; border-radius: 20px; background: #e67e22; border-color: #e67e22;">Login</a>
+                </li>
+                <li sec:authorize="isAnonymous()"><a th:href="@{/register}" class="btn-primary"
+                        style="padding: 5px 15px; font-size: 0.9rem; border-radius: 20px;">Register</a></li>
+                <li sec:authorize="hasRole('ADMIN')">
+                    <a th:href="@{/admin}" class="btn-primary"
+                        style="padding: 5px 15px; font-size: 0.9rem; border-radius: 20px; background: #e74c3c; border-color: #c0392b;">Admin
+                        Panel</a>
+                </li>
+                <li sec:authorize="isAuthenticated()">
+                    <span style="color: var(--text-color); margin-right: 10px; font-weight: 600;">Welcome, <span
+                            sec:authentication="name">User</span></span>
+                </li>
+                <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}"
+                        style="color: var(--highlight-color); font-weight: 600;">Logout</a></li>
+            </ul>
         </nav>
     </div>
 </header>

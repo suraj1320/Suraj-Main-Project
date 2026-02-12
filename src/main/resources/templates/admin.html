@@ -64,8 +64,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item"><a class="nav-link active" th:href="@{/admin}">Dashboard</a></li>
-                    <li class="nav-item"><a class="nav-link" th:href="@{/admin/orders}">Orders</a></li>
-                    <li class="nav-item"><a class="nav-link" th:href="@{/admin/users}">Users</a></li>
+
                     <li class="nav-item"><a class="nav-link" th:href="@{/shop}">View Shop</a></li>
                 </ul>
                 <ul class="navbar-nav">
@@ -78,32 +77,7 @@
 
     <div class="container">
         <!-- Stats Row -->
-        <div class="row mb-4">
-            <div class="col-md-3">
-                <div class="card stat-card">
-                    <div class="stat-value" th:text="${bookCount}">0</div>
-                    <div class="stat-label">Total Books</div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card stat-card">
-                    <div class="stat-value" th:text="${orderCount}">0</div>
-                    <div class="stat-label">Total Orders</div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card stat-card">
-                    <div class="stat-value" th:text="${userCount}">0</div>
-                    <div class="stat-label">Registered Users</div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card stat-card">
-                    <div class="stat-value">$12.4k</div>
-                    <div class="stat-label">Revenue (Est)</div>
-                </div>
-            </div>
-        </div>
+
 
         <!-- Inventory Section -->
         <div class="card">

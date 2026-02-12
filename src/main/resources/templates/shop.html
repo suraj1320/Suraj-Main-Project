@@ -78,9 +78,7 @@
                         <a th:href="@{/login}" class="btn-primary" sec:authorize="isAnonymous()"
                             style="font-size: 0.8rem; padding: 8px 16px; background-color: #95a5a6; border-color: #95a5a6;">Login
                             to Add</a>
-                        <!-- Debug Info -->
-                        <span style="font-size: 10px; color: red;"
-                            th:text="${book.image != null ? book.image : 'No Image'}"></span>
+
                     </div>
                 </div>
             </div>

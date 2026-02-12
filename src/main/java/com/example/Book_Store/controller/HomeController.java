@@ -64,4 +64,9 @@ public class HomeController {
         return "about";
     }
 
+    @org.springframework.web.bind.annotation.GetMapping("/contact")
+    public String contact() {
+        return "contact";
+    }
+
 }

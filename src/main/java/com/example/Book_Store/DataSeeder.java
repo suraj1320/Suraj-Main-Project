@@ -95,6 +95,13 @@ public class DataSeeder implements CommandLineRunner {
                 String book9 = "https://images.unsplash.com/photo-1550399105-c4db5fb85c18?auto=format&fit=crop&w=800&q=80";
                 String book10 = "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=800&q=80";
 
+                // New distinct images
+                String book11 = "https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=800&q=80";
+                String book12 = "https://images.unsplash.com/photo-1519681393798-2f982f9c2b97?auto=format&fit=crop&w=800&q=80";
+                String book13 = "https://images.unsplash.com/photo-1476275466078-bd002865bcb8?auto=format&fit=crop&w=800&q=80";
+                String book14 = "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=800&q=80";
+                String book15 = "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=800&q=80";
+
                 // FICTION
                 seedCategory(Category.FICTION, Arrays.asList(
                                 "The Great Gatsby", "To Kill a Mockingbird", "1984",
@@ -105,25 +112,25 @@ public class DataSeeder implements CommandLineRunner {
                 seedCategory(Category.NON_FICTION, Arrays.asList(
                                 "Sapiens", "Educated", "Becoming",
                                 "The Diary of a Young Girl", "Silent Spring", "In Cold Blood"),
-                                Arrays.asList(book7, book8, book9, book10, book1, book2));
+                                Arrays.asList(book7, book8, book9, book10, book11, book12));
 
                 // MYSTERY
                 seedCategory(Category.MYSTERY, Arrays.asList(
                                 "The Big Sleep", "Gone Girl", "Girl with the Dragon Tattoo",
                                 "The Da Vinci Code", "And Then There Were None", "The Maltese Falcon"),
-                                Arrays.asList(book3, book4, book5, book6, book7, book8));
+                                Arrays.asList(book13, book14, book15, book1, book2, book3));
 
                 // SCIFI
                 seedCategory(Category.SCIFI, Arrays.asList(
                                 "Dune", "The Martian", "Ender's Game",
                                 "Neuromancer", "Snow Crash", "Left Hand of Darkness"),
-                                Arrays.asList(book9, book10, book1, book2, book3, book4));
+                                Arrays.asList(book4, book5, book6, book7, book8, book9));
 
                 // HORROR
                 seedCategory(Category.HORROR, Arrays.asList(
                                 "It", "The Shining", "Dracula",
                                 "Frankenstein", "The Exorcist", "Pet Sematary"),
-                                Arrays.asList(book5, book6, book7, book8, book9, book10));
+                                Arrays.asList(book10, book11, book12, book13, book14, book15));
 
                 // ROMANCE
                 seedCategory(Category.ROMANCE, Arrays.asList(
