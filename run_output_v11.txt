@@ -1,0 +1,1137 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.example:Book-Store >-----------------------
+[INFO] Building Book-Store 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.0:run (default-cli) > test-compile @ Book-Store >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Book-Store ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 25 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ Book-Store ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Book-Store ---
+[INFO] skip non existing resourceDirectory C:\Users\Dinesh\Desktop\Suraj-Main-Project\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ Book-Store ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 1 source file with javac [debug release 17] to target\test-classes
+[INFO] 
+[INFO] <<< spring-boot:3.2.0:run (default-cli) < test-compile @ Book-Store <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.0:run (default-cli) @ Book-Store ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2026-02-12T06:49:34.989+05:30  INFO 60708 --- [Book-Store] [  restartedMain] c.e.Book_Store.BookStoreApplication      : Starting BookStoreApplication using Java 25 with PID 60708 (C:\Users\Dinesh\Desktop\Suraj-Main-Project\target\classes started by Dinesh in C:\Users\Dinesh\Desktop\Suraj-Main-Project)
+2026-02-12T06:49:34.991+05:30  INFO 60708 --- [Book-Store] [  restartedMain] c.e.Book_Store.BookStoreApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-02-12T06:49:35.078+05:30  INFO 60708 --- [Book-Store] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-12T06:49:35.078+05:30  INFO 60708 --- [Book-Store] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-12T06:49:35.774+05:30  INFO 60708 --- [Book-Store] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-12T06:49:35.870+05:30  INFO 60708 --- [Book-Store] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 6 JPA repository interfaces.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/C:/Users/Dinesh/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-02-12T06:49:36.704+05:30  INFO 60708 --- [Book-Store] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2026-02-12T06:49:36.713+05:30  INFO 60708 --- [Book-Store] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-12T06:49:36.713+05:30  INFO 60708 --- [Book-Store] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-02-12T06:49:36.761+05:30  INFO 60708 --- [Book-Store] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-12T06:49:36.762+05:30  INFO 60708 --- [Book-Store] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1683 ms
+2026-02-12T06:49:36.922+05:30  INFO 60708 --- [Book-Store] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-12T06:49:36.971+05:30  INFO 60708 --- [Book-Store] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-02-12T06:49:36.997+05:30  INFO 60708 --- [Book-Store] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-12T06:49:37.275+05:30  INFO 60708 --- [Book-Store] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-12T06:49:37.299+05:30  INFO 60708 --- [Book-Store] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-12T06:49:37.478+05:30  INFO 60708 --- [Book-Store] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@551c51af
+2026-02-12T06:49:37.481+05:30  INFO 60708 --- [Book-Store] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-12T06:49:38.550+05:30  INFO 60708 --- [Book-Store] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-12T06:49:38.657+05:30  INFO 60708 --- [Book-Store] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12T06:49:39.002+05:30  INFO 60708 --- [Book-Store] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-12T06:49:39.584+05:30  WARN 60708 --- [Book-Store] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-12T06:49:39.795+05:30 DEBUG 60708 --- [Book-Store] [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 32 mappings in 'requestMappingHandlerMapping'
+2026-02-12T06:49:39.849+05:30 DEBUG 60708 --- [Book-Store] [  restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-02-12T06:49:39.905+05:30  INFO 60708 --- [Book-Store] [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@13fd9e4c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d6d285f, org.springframework.security.web.context.SecurityContextHolderFilter@5e20a854, org.springframework.security.web.header.HeaderWriterFilter@59a5a47e, org.springframework.web.filter.CorsFilter@6abc0593, org.springframework.security.web.authentication.logout.LogoutFilter@4fc5ea42, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@d274821, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7726b383, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b5654ed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@273c4b68, org.springframework.security.web.access.ExceptionTranslationFilter@e24827b, org.springframework.security.web.access.intercept.AuthorizationFilter@3c0e5a06]
+2026-02-12T06:49:39.996+05:30 DEBUG 60708 --- [Book-Store] [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-02-12T06:49:40.035+05:30 DEBUG 60708 --- [Book-Store] [  restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-02-12T06:49:40.204+05:30  INFO 60708 --- [Book-Store] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-12T06:49:40.234+05:30  INFO 60708 --- [Book-Store] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2026-02-12T06:49:40.241+05:30  INFO 60708 --- [Book-Store] [  restartedMain] c.e.Book_Store.BookStoreApplication      : Started BookStoreApplication in 5.721 seconds (process running for 6.154)
+DataSeeder: Starting...
+DataSeeder: Books and related data deleted.
+Users seeded/updated.
+Processing category: FICTION with 6 books.
+Saved book: The Great Gatsby in FICTION
+Saved book: To Kill a Mockingbird in FICTION
+Saved book: 1984 in FICTION
+Saved book: Pride and Prejudice in FICTION
+Saved book: The Catcher in the Rye in FICTION
+Saved book: The Hobbit in FICTION
+Processing category: NON_FICTION with 6 books.
+Saved book: Sapiens in NON_FICTION
+Saved book: Educated in NON_FICTION
+Saved book: Becoming in NON_FICTION
+Saved book: The Diary of a Young Girl in NON_FICTION
+Saved book: Silent Spring in NON_FICTION
+Saved book: In Cold Blood in NON_FICTION
+Processing category: MYSTERY with 6 books.
+Saved book: The Big Sleep in MYSTERY
+Saved book: Gone Girl in MYSTERY
+Saved book: Girl with the Dragon Tattoo in MYSTERY
+Saved book: The Da Vinci Code in MYSTERY
+Saved book: And Then There Were None in MYSTERY
+Saved book: The Maltese Falcon in MYSTERY
+Processing category: SCIFI with 6 books.
+Saved book: Dune in SCIFI
+Saved book: The Martian in SCIFI
+Saved book: Ender's Game in SCIFI
+Saved book: Neuromancer in SCIFI
+Saved book: Snow Crash in SCIFI
+Saved book: Left Hand of Darkness in SCIFI
+Processing category: HORROR with 6 books.
+Saved book: It in HORROR
+Saved book: The Shining in HORROR
+Saved book: Dracula in HORROR
+Saved book: Frankenstein in HORROR
+Saved book: The Exorcist in HORROR
+Saved book: Pet Sematary in HORROR
+Processing category: ROMANCE with 6 books.
+Saved book: The Notebook in ROMANCE
+Saved book: Outlander in ROMANCE
+Saved book: Me Before You in ROMANCE
+Saved book: The Fault in Our Stars in ROMANCE
+Saved book: Twilight in ROMANCE
+Saved book: Time Traveler's Wife in ROMANCE
+Processing category: BIOGRAPHY with 6 books.
+Saved book: Steve Jobs in BIOGRAPHY
+Saved book: Elon Musk in BIOGRAPHY
+Saved book: Einstein in BIOGRAPHY
+Saved book: Diary of a Young Girl in BIOGRAPHY
+Saved book: Alexander Hamilton in BIOGRAPHY
+Saved book: Churchill in BIOGRAPHY
+Processing category: HISTORY with 6 books.
+Saved book: Guns Germs and Steel in HISTORY
+Saved book: Sapiens in HISTORY
+Saved book: The Silk Roads in HISTORY
+Saved book: 1776 in HISTORY
+Saved book: Genghis Khan in HISTORY
+Saved book: A People's History US in HISTORY
+Processing category: BUSINESS with 6 books.
+Saved book: Zero to One in BUSINESS
+Saved book: Shoe Dog in BUSINESS
+Saved book: Good to Great in BUSINESS
+Saved book: Thinking Fast and Slow in BUSINESS
+Saved book: The Lean Startup in BUSINESS
+Saved book: Atomic Habits in BUSINESS
+Processing category: SELF_HELP with 6 books.
+Saved book: Atomic Habits in SELF_HELP
+Saved book: Power of Now in SELF_HELP
+Saved book: Subtle Art Not Giving in SELF_HELP
+Saved book: You Are a Badass in SELF_HELP
+Saved book: Four Agreements in SELF_HELP
+Saved book: Daring Greatly in SELF_HELP
+Processing category: PROGRAMMING with 6 books.
+Saved book: Clean Code in PROGRAMMING
+Saved book: Pragmatic Programmer in PROGRAMMING
+Saved book: Intro to Algorithms in PROGRAMMING
+Saved book: Design Patterns in PROGRAMMING
+Saved book: Refactoring in PROGRAMMING
+Saved book: Head First Java in PROGRAMMING
+Processing category: SCIENCE with 6 books.
+Saved book: Cosmos in SCIENCE
+Saved book: Brief History of Time in SCIENCE
+Saved book: Selfish Gene in SCIENCE
+Saved book: What If? in SCIENCE
+Saved book: Elegant Universe in SCIENCE
+Saved book: Astrophysics in Hurry in SCIENCE
+Processing category: TECHNOLOGY with 6 books.
+Saved book: The Innovators in TECHNOLOGY
+Saved book: Life 3.0 in TECHNOLOGY
+Saved book: The Shallows in TECHNOLOGY
+Saved book: Superintelligence in TECHNOLOGY
+Saved book: Steve Jobs in TECHNOLOGY
+Saved book: Hackers in TECHNOLOGY
+Processing category: FANTASY with 6 books.
+Saved book: Harry Potter in FANTASY
+Saved book: The Hobbit in FANTASY
+Saved book: Game of Thrones in FANTASY
+Saved book: Name of the Wind in FANTASY
+Saved book: Way of Kings in FANTASY
+Saved book: Lies of Locke Lamora in FANTASY
+Processing category: THRILLER with 6 books.
+Saved book: The Silent Patient in THRILLER
+Saved book: Gone Girl in THRILLER
+Saved book: Girl on the Train in THRILLER
+Saved book: Da Vinci Code in THRILLER
+Saved book: Angels & Demons in THRILLER
+Saved book: Shutter Island in THRILLER
+All categories seeded with 6 books each.
+Seeding orders...
+Orders seeded.
+DataSeeder: Finished successfully.
+2026-02-12T06:49:51.260+05:30  INFO 60708 --- [Book-Store] [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-12T06:49:51.260+05:30  INFO 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-12T06:49:51.261+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-02-12T06:49:51.262+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-02-12T06:49:51.262+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2026-02-12T06:49:51.264+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2e585fc1
+2026-02-12T06:49:51.264+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@57d55af2
+2026-02-12T06:49:51.265+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-02-12T06:49:51.265+05:30  INFO 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2026-02-12T06:49:51.284+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/shop' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-02-12T06:49:51.303+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/shop' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-02-12T06:49:51.308+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/shop", parameters={}
+2026-02-12T06:49:51.310+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.HomeController#shop(Model, String, Category, int, int)
+2026-02-12T06:49:51.384+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:49:52.153+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:49:52.157+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:49:52.158+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:49:52.158+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:49:52.206+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:49:52.206+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:49:52.299+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:49:52.332+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2026-02-12T06:49:52.332+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AuthController#loginPage(String, Model)
+2026-02-12T06:49:52.340+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:49:52.358+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:49:54.961+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2026-02-12T06:49:54.962+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AuthController#loginPage(String, Model)
+2026-02-12T06:49:54.963+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:49:54.999+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:49:55.036+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:49:55.037+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:49:55.038+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:49:55.038+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:49:55.040+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:49:55.042+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:49:55.089+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2026-02-12T06:49:55.089+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AuthController#loginPage(String, Model)
+2026-02-12T06:49:55.091+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:49:55.108+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:49:56.743+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2026-02-12T06:49:56.743+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.HomeController#home(Model)
+2026-02-12T06:49:56.815+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:49:56.835+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:49:56.864+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:49:56.864+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:49:56.864+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:49:56.864+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:49:56.869+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:49:56.869+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:49:56.891+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:49:56.891+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:49:56.894+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:49:56.897+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:49:56.898+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:49:56.898+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:49:56.900+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:49:56.904+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:49:59.075+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/shop", parameters={}
+2026-02-12T06:49:59.076+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.HomeController#shop(Model, String, Category, int, int)
+2026-02-12T06:49:59.093+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:49:59.218+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:49:59.218+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:49:59.218+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:49:59.219+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:49:59.224+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:49:59.226+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:49:59.251+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:49:59.271+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:49:59.271+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:49:59.272+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:49:59.274+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:49:59.275+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:49:59.275+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:49:59.277+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:49:59.277+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:03.854+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/cart", parameters={}
+2026-02-12T06:50:03.854+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.CartController#viewCart(Model, Principal)
+2026-02-12T06:50:03.887+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:50:03.898+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:03.929+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:50:03.931+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:50:03.931+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:50:03.931+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:50:03.934+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:03.935+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:03.951+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:50:03.952+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:50:03.957+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:50:03.958+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:50:03.959+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:50:03.959+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:50:03.959+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:50:03.959+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:06.510+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/checkout/address", parameters={}
+2026-02-12T06:50:06.511+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.CheckoutController#selectAddressPage(Principal, Model)
+2026-02-12T06:50:06.527+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:50:06.548+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:06.576+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:50:06.577+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:50:06.577+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:50:06.578+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:50:06.581+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:06.583+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:06.600+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:50:06.600+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:50:06.602+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:50:06.603+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:50:06.603+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:50:06.603+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:50:06.604+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:50:06.604+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:12.694+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/checkout/summary", parameters={masked}
+2026-02-12T06:50:12.694+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.CheckoutController#checkoutSummary(Long, Principal, Model)
+2026-02-12T06:50:12.715+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:50:12.728+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:12.757+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:50:12.757+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:50:12.759+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:50:12.759+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:50:12.762+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:12.762+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:12.783+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:50:12.785+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:50:12.787+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:50:12.788+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:50:12.788+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:50:12.789+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:50:12.789+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:50:12.789+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:14.462+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/checkout/place-order", parameters={masked}
+2026-02-12T06:50:14.462+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.CheckoutController#placeOrder(String, Long, Principal, RedirectAttributes)
+java.lang.RuntimeException: Book details not found for ID: 3602
+	at com.example.Book_Store.service.OrderService.lambda$0(OrderService.java:46)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.example.Book_Store.service.OrderService.placeOrder(OrderService.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717)
+	at com.example.Book_Store.service.OrderService$$SpringCGLIB$$0.placeOrder(<generated>)
+	at com.example.Book_Store.controller.CheckoutController.placeOrder(CheckoutController.java:143)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:254)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:182)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Checkout Error: Book details not found for ID: 3602
+2026-02-12T06:50:14.548+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2026-02-12T06:50:14.552+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2026-02-12T06:50:14.560+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/shop", parameters={}
+2026-02-12T06:50:14.562+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.HomeController#shop(Model, String, Category, int, int)
+2026-02-12T06:50:14.572+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:50:14.624+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:50:14.624+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:50:14.624+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:14.625+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:50:14.625+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:50:14.629+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:14.629+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:14.652+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:50:14.652+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:50:14.654+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:50:14.655+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:50:14.656+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:50:14.656+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:50:14.656+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:50:14.656+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:33.271+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2026-02-12T06:50:33.271+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.HomeController#home(Model)
+2026-02-12T06:50:33.300+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:50:33.314+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:33.349+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:50:33.349+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:50:33.350+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:50:33.351+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:50:33.364+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:33.364+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:33.387+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2026-02-12T06:50:33.387+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AuthController#loginPage(String, Model)
+2026-02-12T06:50:33.388+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:50:33.409+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:35.463+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2026-02-12T06:50:35.463+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AuthController#loginPage(String, Model)
+2026-02-12T06:50:35.464+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:50:35.495+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:35.527+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:50:35.527+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:50:35.527+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:50:35.528+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:50:35.531+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:35.532+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:35.559+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2026-02-12T06:50:35.559+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AuthController#loginPage(String, Model)
+2026-02-12T06:50:35.560+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:50:35.573+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:39.256+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2026-02-12T06:50:39.257+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.HomeController#home(Model)
+2026-02-12T06:50:39.266+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:50:39.282+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:39.314+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:50:39.314+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:50:39.314+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:50:39.315+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:50:39.318+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:39.319+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:39.335+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:50:39.335+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:50:39.338+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:50:39.339+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:50:39.339+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:50:39.339+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:50:39.340+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:50:39.340+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:42.544+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/admin", parameters={}
+2026-02-12T06:50:42.544+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AdminController#adminDashboard(Model)
+2026-02-12T06:50:42.594+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:50:42.687+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:42.796+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:50:42.796+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:50:42.798+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:50:42.798+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:50:42.799+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:50:42.799+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:50:42.799+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:50:42.799+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:59.765+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/admin/orders", parameters={}
+2026-02-12T06:50:59.766+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AdminController#adminOrders(Model)
+2026-02-12T06:50:59.780+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:50:59.812+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:50:59.852+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:50:59.853+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:50:59.856+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:50:59.857+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:50:59.858+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:50:59.858+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:50:59.858+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:50:59.858+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:51:02.716+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/admin/users", parameters={}
+2026-02-12T06:51:02.716+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AdminController#adminUsers(Model)
+2026-02-12T06:51:02.730+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:51:02.742+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:51:02.781+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:51:02.781+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:51:02.785+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:51:02.788+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:51:02.789+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:51:02.790+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:51:02.791+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:51:02.791+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:51:08.054+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/admin", parameters={}
+2026-02-12T06:51:08.054+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AdminController#adminDashboard(Model)
+2026-02-12T06:51:08.084+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:51:08.135+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:51:08.194+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:51:08.195+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:51:08.200+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:51:08.200+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:51:08.200+05:30  WARN 60708 --- [Book-Store] [io-8082-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:51:08.200+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:51:08.201+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:51:08.202+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:51:10.728+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/admin/orders", parameters={}
+2026-02-12T06:51:10.729+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AdminController#adminOrders(Model)
+2026-02-12T06:51:10.745+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:51:10.754+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:51:10.790+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:51:10.792+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:51:10.793+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:51:10.794+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:51:10.795+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:51:10.795+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:51:10.796+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:51:10.796+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:51:20.973+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/admin/users", parameters={}
+2026-02-12T06:51:20.973+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AdminController#adminUsers(Model)
+2026-02-12T06:51:20.979+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:51:20.984+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:51:21.021+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:51:21.022+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:51:21.025+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:51:21.025+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:51:21.025+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:51:21.025+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:51:21.026+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:51:21.026+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:53:02.282+05:30  INFO 60708 --- [Book-Store] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-12T06:53:02.295+05:30  INFO 60708 --- [Book-Store] [       Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12T06:53:02.298+05:30  INFO 60708 --- [Book-Store] [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-12T06:53:02.303+05:30  INFO 60708 --- [Book-Store] [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2026-02-12T06:53:02.390+05:30  INFO 60708 --- [Book-Store] [  restartedMain] c.e.Book_Store.BookStoreApplication      : Starting BookStoreApplication using Java 25 with PID 60708 (C:\Users\Dinesh\Desktop\Suraj-Main-Project\target\classes started by Dinesh in C:\Users\Dinesh\Desktop\Suraj-Main-Project)
+2026-02-12T06:53:02.390+05:30  INFO 60708 --- [Book-Store] [  restartedMain] c.e.Book_Store.BookStoreApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-02-12T06:53:02.582+05:30  INFO 60708 --- [Book-Store] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-12T06:53:02.597+05:30  INFO 60708 --- [Book-Store] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 6 JPA repository interfaces.
+2026-02-12T06:53:02.722+05:30  INFO 60708 --- [Book-Store] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2026-02-12T06:53:02.722+05:30  INFO 60708 --- [Book-Store] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-12T06:53:02.722+05:30  INFO 60708 --- [Book-Store] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-02-12T06:53:02.752+05:30  INFO 60708 --- [Book-Store] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-12T06:53:02.752+05:30  INFO 60708 --- [Book-Store] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 360 ms
+2026-02-12T06:53:02.822+05:30  INFO 60708 --- [Book-Store] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-12T06:53:02.825+05:30  INFO 60708 --- [Book-Store] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-12T06:53:02.828+05:30  INFO 60708 --- [Book-Store] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-12T06:53:02.829+05:30  INFO 60708 --- [Book-Store] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-02-12T06:53:02.838+05:30  INFO 60708 --- [Book-Store] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@42682168
+2026-02-12T06:53:02.838+05:30  INFO 60708 --- [Book-Store] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-02-12T06:53:02.975+05:30  INFO 60708 --- [Book-Store] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-12T06:53:03.076+05:30  INFO 60708 --- [Book-Store] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12T06:53:03.352+05:30  WARN 60708 --- [Book-Store] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-12T06:53:03.406+05:30 DEBUG 60708 --- [Book-Store] [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 32 mappings in 'requestMappingHandlerMapping'
+2026-02-12T06:53:03.432+05:30 DEBUG 60708 --- [Book-Store] [  restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-02-12T06:53:03.458+05:30  INFO 60708 --- [Book-Store] [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@46fa384b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65f56778, org.springframework.security.web.context.SecurityContextHolderFilter@6cea135f, org.springframework.security.web.header.HeaderWriterFilter@414f12a7, org.springframework.web.filter.CorsFilter@216e1834, org.springframework.security.web.authentication.logout.LogoutFilter@5ba18aab, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5d9afbf0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@48a7eaee, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e8ee6ae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b213292, org.springframework.security.web.access.ExceptionTranslationFilter@54685afe, org.springframework.security.web.access.intercept.AuthorizationFilter@ab9dcde]
+2026-02-12T06:53:03.495+05:30 DEBUG 60708 --- [Book-Store] [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-02-12T06:53:03.501+05:30 DEBUG 60708 --- [Book-Store] [  restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-02-12T06:53:03.564+05:30  INFO 60708 --- [Book-Store] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-12T06:53:03.578+05:30  INFO 60708 --- [Book-Store] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2026-02-12T06:53:03.581+05:30  INFO 60708 --- [Book-Store] [  restartedMain] c.e.Book_Store.BookStoreApplication      : Started BookStoreApplication in 1.218 seconds (process running for 209.491)
+DataSeeder: Starting...
+DataSeeder: Books and related data deleted.
+Users seeded/updated.
+Processing category: FICTION with 6 books.
+Saved book: The Great Gatsby in FICTION
+Saved book: To Kill a Mockingbird in FICTION
+Saved book: 1984 in FICTION
+Saved book: Pride and Prejudice in FICTION
+Saved book: The Catcher in the Rye in FICTION
+Saved book: The Hobbit in FICTION
+Processing category: NON_FICTION with 6 books.
+Saved book: Sapiens in NON_FICTION
+Saved book: Educated in NON_FICTION
+Saved book: Becoming in NON_FICTION
+Saved book: The Diary of a Young Girl in NON_FICTION
+Saved book: Silent Spring in NON_FICTION
+Saved book: In Cold Blood in NON_FICTION
+Processing category: MYSTERY with 6 books.
+Saved book: The Big Sleep in MYSTERY
+Saved book: Gone Girl in MYSTERY
+Saved book: Girl with the Dragon Tattoo in MYSTERY
+Saved book: The Da Vinci Code in MYSTERY
+Saved book: And Then There Were None in MYSTERY
+Saved book: The Maltese Falcon in MYSTERY
+Processing category: SCIFI with 6 books.
+Saved book: Dune in SCIFI
+Saved book: The Martian in SCIFI
+Saved book: Ender's Game in SCIFI
+Saved book: Neuromancer in SCIFI
+Saved book: Snow Crash in SCIFI
+Saved book: Left Hand of Darkness in SCIFI
+Processing category: HORROR with 6 books.
+Saved book: It in HORROR
+Saved book: The Shining in HORROR
+Saved book: Dracula in HORROR
+Saved book: Frankenstein in HORROR
+Saved book: The Exorcist in HORROR
+Saved book: Pet Sematary in HORROR
+Processing category: ROMANCE with 6 books.
+Saved book: The Notebook in ROMANCE
+Saved book: Outlander in ROMANCE
+Saved book: Me Before You in ROMANCE
+Saved book: The Fault in Our Stars in ROMANCE
+Saved book: Twilight in ROMANCE
+Saved book: Time Traveler's Wife in ROMANCE
+Processing category: BIOGRAPHY with 6 books.
+Saved book: Steve Jobs in BIOGRAPHY
+Saved book: Elon Musk in BIOGRAPHY
+Saved book: Einstein in BIOGRAPHY
+Saved book: Diary of a Young Girl in BIOGRAPHY
+Saved book: Alexander Hamilton in BIOGRAPHY
+Saved book: Churchill in BIOGRAPHY
+Processing category: HISTORY with 6 books.
+Saved book: Guns Germs and Steel in HISTORY
+Saved book: Sapiens in HISTORY
+Saved book: The Silk Roads in HISTORY
+Saved book: 1776 in HISTORY
+Saved book: Genghis Khan in HISTORY
+Saved book: A People's History US in HISTORY
+Processing category: BUSINESS with 6 books.
+Saved book: Zero to One in BUSINESS
+Saved book: Shoe Dog in BUSINESS
+Saved book: Good to Great in BUSINESS
+Saved book: Thinking Fast and Slow in BUSINESS
+Saved book: The Lean Startup in BUSINESS
+Saved book: Atomic Habits in BUSINESS
+Processing category: SELF_HELP with 6 books.
+Saved book: Atomic Habits in SELF_HELP
+Saved book: Power of Now in SELF_HELP
+Saved book: Subtle Art Not Giving in SELF_HELP
+Saved book: You Are a Badass in SELF_HELP
+Saved book: Four Agreements in SELF_HELP
+Saved book: Daring Greatly in SELF_HELP
+Processing category: PROGRAMMING with 6 books.
+Saved book: Clean Code in PROGRAMMING
+Saved book: Pragmatic Programmer in PROGRAMMING
+Saved book: Intro to Algorithms in PROGRAMMING
+Saved book: Design Patterns in PROGRAMMING
+Saved book: Refactoring in PROGRAMMING
+Saved book: Head First Java in PROGRAMMING
+Processing category: SCIENCE with 6 books.
+Saved book: Cosmos in SCIENCE
+Saved book: Brief History of Time in SCIENCE
+Saved book: Selfish Gene in SCIENCE
+Saved book: What If? in SCIENCE
+Saved book: Elegant Universe in SCIENCE
+Saved book: Astrophysics in Hurry in SCIENCE
+Processing category: TECHNOLOGY with 6 books.
+Saved book: The Innovators in TECHNOLOGY
+Saved book: Life 3.0 in TECHNOLOGY
+Saved book: The Shallows in TECHNOLOGY
+Saved book: Superintelligence in TECHNOLOGY
+Saved book: Steve Jobs in TECHNOLOGY
+Saved book: Hackers in TECHNOLOGY
+Processing category: FANTASY with 6 books.
+Saved book: Harry Potter in FANTASY
+Saved book: The Hobbit in FANTASY
+Saved book: Game of Thrones in FANTASY
+Saved book: Name of the Wind in FANTASY
+Saved book: Way of Kings in FANTASY
+Saved book: Lies of Locke Lamora in FANTASY
+Processing category: THRILLER with 6 books.
+Saved book: The Silent Patient in THRILLER
+Saved book: Gone Girl in THRILLER
+Saved book: Girl on the Train in THRILLER
+Saved book: Da Vinci Code in THRILLER
+Saved book: Angels & Demons in THRILLER
+Saved book: Shutter Island in THRILLER
+All categories seeded with 6 books each.
+Seeding orders...
+Orders seeded.
+DataSeeder: Finished successfully.
+2026-02-12T06:53:04.449+05:30  INFO 60708 --- [Book-Store] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-12T06:54:07.840+05:30  INFO 60708 --- [Book-Store] [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-12T06:54:07.841+05:30  INFO 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-12T06:54:07.841+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-02-12T06:54:07.841+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-02-12T06:54:07.841+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2026-02-12T06:54:07.842+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@52120306
+2026-02-12T06:54:07.843+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@485ee066
+2026-02-12T06:54:07.843+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-02-12T06:54:07.843+05:30  INFO 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-02-12T06:54:07.843+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/admin/users' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-02-12T06:54:07.843+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/admin/users' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-02-12T06:54:07.844+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/admin/users", parameters={}
+2026-02-12T06:54:07.845+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AdminController#adminUsers(Model)
+2026-02-12T06:54:07.860+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:54:07.883+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:07.938+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:54:07.938+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:07.941+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:54:07.942+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:54:07.942+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:54:07.942+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:54:07.943+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:54:07.943+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:10.962+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/admin/orders", parameters={}
+2026-02-12T06:54:10.962+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AdminController#adminOrders(Model)
+2026-02-12T06:54:10.971+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:54:10.989+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:11.030+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:54:11.030+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:11.032+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:54:11.032+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:54:11.033+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:54:11.033+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:54:11.033+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:54:11.033+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:19.954+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2026-02-12T06:54:19.954+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.HomeController#home(Model)
+2026-02-12T06:54:19.967+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:54:19.989+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:20.029+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:54:20.030+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:20.031+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:54:20.032+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:20.037+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:20.039+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:20.082+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:54:20.083+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:20.089+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:54:20.090+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:54:20.090+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:54:20.090+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:54:20.090+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:54:20.091+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:23.659+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2026-02-12T06:54:23.660+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.HomeController#home(Model)
+2026-02-12T06:54:23.672+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:54:23.690+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:23.720+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:54:23.721+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:54:23.721+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:23.721+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:23.726+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:23.726+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:23.906+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2026-02-12T06:54:23.907+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AuthController#loginPage(String, Model)
+2026-02-12T06:54:23.912+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:54:23.923+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:25.197+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2026-02-12T06:54:25.197+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AuthController#loginPage(String, Model)
+2026-02-12T06:54:25.199+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:54:25.215+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:25.244+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:54:25.244+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:54:25.244+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:25.244+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:25.248+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:25.248+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:25.278+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2026-02-12T06:54:25.278+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AuthController#loginPage(String, Model)
+2026-02-12T06:54:25.279+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:54:25.289+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:29.224+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2026-02-12T06:54:29.224+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.HomeController#home(Model)
+2026-02-12T06:54:29.233+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:54:29.245+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:29.284+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:54:29.285+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:29.284+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:54:29.285+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:29.288+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:29.291+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:29.308+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:54:29.309+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:29.312+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:54:29.312+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:54:29.312+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:54:29.312+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:54:29.313+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:54:29.313+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:32.086+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/shop", parameters={}
+2026-02-12T06:54:32.086+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.HomeController#shop(Model, String, Category, int, int)
+2026-02-12T06:54:32.104+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:54:32.145+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:32.149+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:54:32.149+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:54:32.149+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:32.150+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:32.153+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:32.153+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:32.173+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:54:32.173+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:32.175+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:54:32.175+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:54:32.175+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:54:32.176+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:54:32.176+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:54:32.176+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:37.277+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/cart", parameters={}
+2026-02-12T06:54:37.277+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.CartController#viewCart(Model, Principal)
+2026-02-12T06:54:37.298+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:54:37.308+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:37.340+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:54:37.340+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:54:37.340+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:37.342+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:37.345+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:37.345+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:37.368+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:54:37.369+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:37.375+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:54:37.375+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:54:37.376+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:54:37.376+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:54:37.377+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:54:37.377+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:39.445+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/checkout/address", parameters={}
+2026-02-12T06:54:39.445+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.CheckoutController#selectAddressPage(Principal, Model)
+2026-02-12T06:54:39.458+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:54:39.472+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:39.504+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:54:39.505+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:39.505+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:54:39.505+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:39.508+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:39.508+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:39.524+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:54:39.524+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:39.525+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:54:39.525+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:54:39.525+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:54:39.525+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:54:39.526+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:54:39.526+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:43.494+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/checkout/summary", parameters={masked}
+2026-02-12T06:54:43.494+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.CheckoutController#checkoutSummary(Long, Principal, Model)
+2026-02-12T06:54:43.509+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:54:43.522+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:43.560+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:54:43.561+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:54:43.561+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:43.561+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:43.563+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:43.565+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:43.592+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:54:43.593+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:43.601+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:54:43.602+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:54:43.602+05:30  WARN 60708 --- [Book-Store] [io-8082-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:54:43.603+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:54:43.603+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:54:43.603+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:47.184+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/checkout/place-order", parameters={masked}
+2026-02-12T06:54:47.184+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.CheckoutController#placeOrder(String, Long, Principal, RedirectAttributes)
+java.lang.RuntimeException: Book details not found for ID: 3602
+	at com.example.Book_Store.service.OrderService.lambda$0(OrderService.java:46)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.example.Book_Store.service.OrderService.placeOrder(OrderService.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717)
+	at com.example.Book_Store.service.OrderService$$SpringCGLIB$$0.placeOrder(<generated>)
+	at com.example.Book_Store.controller.CheckoutController.placeOrder(CheckoutController.java:143)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:254)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:182)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Checkout Error: Book details not found for ID: 3602
+2026-02-12T06:54:47.222+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2026-02-12T06:54:47.222+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2026-02-12T06:54:47.229+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/shop", parameters={}
+2026-02-12T06:54:47.229+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.HomeController#shop(Model, String, Category, int, int)
+2026-02-12T06:54:47.239+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:54:47.275+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:47.285+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:54:47.286+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:54:47.286+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:47.286+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:47.290+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:47.291+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:54:51.990+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:54:51.990+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:54:51.994+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:54:51.995+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:54:51.995+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:54:51.995+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:54:51.996+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:54:51.996+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:58:32.268+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/shop", parameters={}
+2026-02-12T06:58:32.268+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.HomeController#shop(Model, String, Category, int, int)
+2026-02-12T06:58:32.284+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:58:32.374+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:58:32.375+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:58:32.375+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:58:32.382+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:58:32.384+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:58:32.386+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:58:32.403+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:58:32.433+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:58:32.433+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:58:32.436+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:58:32.438+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:58:32.438+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:58:32.438+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:58:32.440+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:58:32.440+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:58:37.257+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/cart", parameters={}
+2026-02-12T06:58:37.257+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.CartController#viewCart(Model, Principal)
+2026-02-12T06:58:37.269+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:58:37.281+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:58:37.317+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:58:37.317+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:58:37.317+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:58:37.317+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:58:37.321+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:58:37.321+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:58:37.338+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:58:37.339+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:58:37.341+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:58:37.341+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:58:37.341+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:58:37.341+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:58:37.342+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:58:37.342+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:58:39.670+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/checkout/address", parameters={}
+2026-02-12T06:58:39.670+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.CheckoutController#selectAddressPage(Principal, Model)
+2026-02-12T06:58:39.682+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:58:39.696+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:58:39.728+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:58:39.728+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:58:39.728+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:58:39.728+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:58:39.731+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:58:39.731+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:58:39.752+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:58:39.752+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:58:39.756+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:58:39.756+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:58:39.756+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:58:39.756+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:58:39.757+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:58:39.757+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:58:44.268+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/checkout/summary", parameters={masked}
+2026-02-12T06:58:44.268+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.CheckoutController#checkoutSummary(Long, Principal, Model)
+2026-02-12T06:58:44.281+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:58:44.297+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:58:44.334+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:58:44.334+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:58:44.334+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:58:44.334+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:58:44.341+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:58:44.343+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:58:44.370+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:58:44.372+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:58:44.374+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:58:44.375+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:58:44.376+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:58:44.376+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:58:44.377+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:58:44.378+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:58:45.999+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/checkout/place-order", parameters={masked}
+2026-02-12T06:58:45.999+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.CheckoutController#placeOrder(String, Long, Principal, RedirectAttributes)
+2026-02-12T06:58:46.031+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2026-02-12T06:58:46.031+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2026-02-12T06:58:46.038+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/payment", parameters={}
+2026-02-12T06:58:46.038+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.PaymentController#paymentPage()
+2026-02-12T06:58:46.043+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:58:46.047+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:58:46.090+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:58:46.090+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:58:46.093+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:58:46.094+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:58:46.094+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:58:46.094+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:58:46.095+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:58:46.095+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:58:49.243+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/payment/process", parameters={masked}
+2026-02-12T06:58:49.244+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.PaymentController#processPayment(String)
+2026-02-12T06:58:49.244+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2026-02-12T06:58:49.245+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2026-02-12T06:58:49.258+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/order-success?payment=cod", parameters={masked}
+2026-02-12T06:58:49.259+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.OrderController#orderSuccess()
+2026-02-12T06:58:49.264+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:58:49.268+05:30 DEBUG 60708 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:58:49.313+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:58:49.313+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:58:49.314+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:58:49.315+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:58:49.315+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:58:49.315+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:58:49.316+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:58:49.316+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:58:51.132+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2026-02-12T06:58:51.132+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.HomeController#home(Model)
+2026-02-12T06:58:51.140+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:58:51.155+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:58:51.183+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:58:51.183+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:58:51.183+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:58:51.184+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:58:51.187+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:58:51.187+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:58:51.223+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:58:51.223+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:58:51.226+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:58:51.227+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:58:51.227+05:30  WARN 60708 --- [Book-Store] [nio-8082-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:58:51.227+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:58:51.227+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:58:51.228+05:30 DEBUG 60708 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+^CTerminate batch job (Y/N)? 

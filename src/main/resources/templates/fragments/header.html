@@ -7,7 +7,7 @@
             <ul style="display: flex; gap: 2rem; list-style: none; align-items: center;">
                 <li><a th:href="@{/}">Home</a></li>
                 <li><a th:href="@{/shop}">Shop</a></li>
-                <li><a th:href="@{/my-orders}">Orders</a></li>
+                <li><a th:href="@{/my-orders}">My Orders</a></li>
                 <li><a th:href="@{/about}">About</a></li>
                 <li>
                     <a th:href="@{/cart}" style="display: flex; align-items: center; gap: 5px;">
@@ -15,6 +15,12 @@
                         <span class="cart-count"
                             style="background: var(--highlight-color); color: white; padding: 2px 6px; border-radius: 50%; font-size: 0.8rem;">0</span>
                     </a>
+                </li>
+                <li>
+                    <button onclick="clearCartManually()"
+                        style="background: #e74c3c; color: white; border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer; font-size: 0.85rem;">
+                        Clear Cart
+                    </button>
                 </li>
                 <!-- Search Bar -->
                 <form th:action="@{/shop}" method="get"

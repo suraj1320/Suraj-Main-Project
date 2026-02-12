@@ -17,11 +17,31 @@ public class AdminController {
     @Autowired
     private com.example.Book_Store.service.BookService bookService;
 
+    @Autowired
+    private com.example.Book_Store.service.OrderService orderService;
+
+    @Autowired
+    private com.example.Book_Store.service.UserService userService;
+
     @GetMapping
     public String adminDashboard(Model model) {
         model.addAttribute("books", bookService.getAllBooks());
         model.addAttribute("bookCount", bookService.count());
+        model.addAttribute("orderCount", orderService.getAllOrders().size());
+        model.addAttribute("userCount", userService.getAllUsers().size());
         return "admin";
+    }
+
+    @GetMapping("/orders")
+    public String adminOrders(Model model) {
+        model.addAttribute("orders", orderService.getAllOrders());
+        return "admin-orders";
+    }
+
+    @GetMapping("/users")
+    public String adminUsers(Model model) {
+        model.addAttribute("users", userService.getAllUsers());
+        return "admin-users";
     }
 
     @GetMapping("/add-book")

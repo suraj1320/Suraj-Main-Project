@@ -1,0 +1,1140 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.example:Book-Store >-----------------------
+[INFO] Building Book-Store 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.0:run (default-cli) > test-compile @ Book-Store >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Book-Store ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 23 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ Book-Store ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Book-Store ---
+[INFO] skip non existing resourceDirectory C:\Users\Dinesh\Desktop\Suraj-Main-Project\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ Book-Store ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 1 source file with javac [debug release 17] to target\test-classes
+[INFO] 
+[INFO] <<< spring-boot:3.2.0:run (default-cli) < test-compile @ Book-Store <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.0:run (default-cli) @ Book-Store ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2026-02-12T05:56:04.890+05:30  INFO 69652 --- [Book-Store] [  restartedMain] c.e.Book_Store.BookStoreApplication      : Starting BookStoreApplication using Java 25 with PID 69652 (C:\Users\Dinesh\Desktop\Suraj-Main-Project\target\classes started by Dinesh in C:\Users\Dinesh\Desktop\Suraj-Main-Project)
+2026-02-12T05:56:04.892+05:30  INFO 69652 --- [Book-Store] [  restartedMain] c.e.Book_Store.BookStoreApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-02-12T05:56:04.931+05:30  INFO 69652 --- [Book-Store] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-12T05:56:04.931+05:30  INFO 69652 --- [Book-Store] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-12T05:56:05.437+05:30  INFO 69652 --- [Book-Store] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-12T05:56:05.489+05:30  INFO 69652 --- [Book-Store] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 6 JPA repository interfaces.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/C:/Users/Dinesh/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-02-12T05:56:05.989+05:30  INFO 69652 --- [Book-Store] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2026-02-12T05:56:05.995+05:30  INFO 69652 --- [Book-Store] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-12T05:56:05.995+05:30  INFO 69652 --- [Book-Store] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-02-12T05:56:06.031+05:30  INFO 69652 --- [Book-Store] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-12T05:56:06.031+05:30  INFO 69652 --- [Book-Store] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1100 ms
+2026-02-12T05:56:06.143+05:30  INFO 69652 --- [Book-Store] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-12T05:56:06.174+05:30  INFO 69652 --- [Book-Store] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-02-12T05:56:06.193+05:30  INFO 69652 --- [Book-Store] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-12T05:56:06.319+05:30  INFO 69652 --- [Book-Store] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-12T05:56:06.334+05:30  INFO 69652 --- [Book-Store] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-12T05:56:06.434+05:30  INFO 69652 --- [Book-Store] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6391a038
+2026-02-12T05:56:06.435+05:30  INFO 69652 --- [Book-Store] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-12T05:56:07.114+05:30  INFO 69652 --- [Book-Store] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-12T05:56:07.193+05:30  WARN 69652 --- [Book-Store] [  restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "drop table if exists addresses" via JDBC [Cannot drop table 'addresses' referenced by a foreign key constraint 'FKhlglkvf5i60dv6dn397ethgpt' on table 'orders'.]
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "drop table if exists addresses" via JDBC [Cannot drop table 'addresses' referenced by a foreign key constraint 'FKhlglkvf5i60dv6dn397ethgpt' on table 'orders'.]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropTables(SchemaDropperImpl.java:377) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropConstraintsTablesSequences(SchemaDropperImpl.java:253) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:215) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:185) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:155) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:115) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:244) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:295) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) ~[spring-boot-3.2.0.jar:3.2.0]
+	at com.example.Book_Store.BookStoreApplication.main(BookStoreApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.0.jar:3.2.0]
+Caused by: java.sql.SQLException: Cannot drop table 'addresses' referenced by a foreign key constraint 'FKhlglkvf5i60dv6dn397ethgpt' on table 'orders'.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	... 43 common frames omitted
+
+2026-02-12T05:56:07.197+05:30  WARN 69652 --- [Book-Store] [  restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "drop table if exists book" via JDBC [Cannot drop table 'book' referenced by a foreign key constraint 'FKqscqcme08spiyt2guyqdj72eh' on table 'order_items'.]
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "drop table if exists book" via JDBC [Cannot drop table 'book' referenced by a foreign key constraint 'FKqscqcme08spiyt2guyqdj72eh' on table 'order_items'.]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropTables(SchemaDropperImpl.java:377) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropConstraintsTablesSequences(SchemaDropperImpl.java:253) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:215) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:185) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:155) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:115) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:244) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:295) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) ~[spring-boot-3.2.0.jar:3.2.0]
+	at com.example.Book_Store.BookStoreApplication.main(BookStoreApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.0.jar:3.2.0]
+Caused by: java.sql.SQLException: Cannot drop table 'book' referenced by a foreign key constraint 'FKqscqcme08spiyt2guyqdj72eh' on table 'order_items'.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	... 43 common frames omitted
+
+2026-02-12T05:56:07.219+05:30  WARN 69652 --- [Book-Store] [  restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "drop table if exists customer_orders" via JDBC [Cannot drop table 'customer_orders' referenced by a foreign key constraint 'FKb2vrrqy10nnyqhb5ergl5498r' on table 'order_items'.]
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "drop table if exists customer_orders" via JDBC [Cannot drop table 'customer_orders' referenced by a foreign key constraint 'FKb2vrrqy10nnyqhb5ergl5498r' on table 'order_items'.]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropTables(SchemaDropperImpl.java:377) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropConstraintsTablesSequences(SchemaDropperImpl.java:253) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:215) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:185) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:155) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:115) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:244) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:295) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) ~[spring-boot-3.2.0.jar:3.2.0]
+	at com.example.Book_Store.BookStoreApplication.main(BookStoreApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.0.jar:3.2.0]
+Caused by: java.sql.SQLException: Cannot drop table 'customer_orders' referenced by a foreign key constraint 'FKb2vrrqy10nnyqhb5ergl5498r' on table 'order_items'.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	... 43 common frames omitted
+
+2026-02-12T05:56:07.223+05:30  WARN 69652 --- [Book-Store] [  restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "drop table if exists users" via JDBC [Cannot drop table 'users' referenced by a foreign key constraint 'FK32ql8ubntj5uh44ph9659tiih' on table 'orders'.]
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "drop table if exists users" via JDBC [Cannot drop table 'users' referenced by a foreign key constraint 'FK32ql8ubntj5uh44ph9659tiih' on table 'orders'.]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropTables(SchemaDropperImpl.java:377) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropConstraintsTablesSequences(SchemaDropperImpl.java:253) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:215) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:185) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:155) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:115) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:244) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:295) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) ~[spring-boot-3.2.0.jar:3.2.0]
+	at com.example.Book_Store.BookStoreApplication.main(BookStoreApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.0.jar:3.2.0]
+Caused by: java.sql.SQLException: Cannot drop table 'users' referenced by a foreign key constraint 'FK32ql8ubntj5uh44ph9659tiih' on table 'orders'.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	... 43 common frames omitted
+
+2026-02-12T05:56:07.230+05:30  WARN 69652 --- [Book-Store] [  restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "create table addresses (id bigint not null auto_increment, user_id bigint, city varchar(255), country varchar(255), state varchar(255), street varchar(255), zip_code varchar(255), primary key (id)) engine=InnoDB" via JDBC [Table 'addresses' already exists]
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table addresses (id bigint not null auto_increment, user_id bigint, city varchar(255), country varchar(255), state varchar(255), street varchar(255), zip_code varchar(255), primary key (id)) engine=InnoDB" via JDBC [Table 'addresses' already exists]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createTables(SchemaCreatorImpl.java:420) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createSequencesTablesConstraints(SchemaCreatorImpl.java:340) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:239) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:172) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:142) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:118) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:256) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:295) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) ~[spring-boot-3.2.0.jar:3.2.0]
+	at com.example.Book_Store.BookStoreApplication.main(BookStoreApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.0.jar:3.2.0]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'addresses' already exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	... 43 common frames omitted
+
+2026-02-12T05:56:07.233+05:30  WARN 69652 --- [Book-Store] [  restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "create table book (price float(53) not null, stock integer not null, id bigint not null auto_increment, image varchar(500), description varchar(2000), author varchar(255) not null, title varchar(255) not null, category enum ('FICTION','NON_FICTION','MYSTERY','SCIFI','HORROR','ROMANCE','BIOGRAPHY','HISTORY','BUSINESS','SELF_HELP','PROGRAMMING','SCIENCE','TECHNOLOGY','FANTASY','THRILLER','OTHER') not null, primary key (id)) engine=InnoDB" via JDBC [Table 'book' already exists]
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table book (price float(53) not null, stock integer not null, id bigint not null auto_increment, image varchar(500), description varchar(2000), author varchar(255) not null, title varchar(255) not null, category enum ('FICTION','NON_FICTION','MYSTERY','SCIFI','HORROR','ROMANCE','BIOGRAPHY','HISTORY','BUSINESS','SELF_HELP','PROGRAMMING','SCIENCE','TECHNOLOGY','FANTASY','THRILLER','OTHER') not null, primary key (id)) engine=InnoDB" via JDBC [Table 'book' already exists]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createTables(SchemaCreatorImpl.java:420) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createSequencesTablesConstraints(SchemaCreatorImpl.java:340) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:239) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:172) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:142) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:118) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:256) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:295) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) ~[spring-boot-3.2.0.jar:3.2.0]
+	at com.example.Book_Store.BookStoreApplication.main(BookStoreApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.0.jar:3.2.0]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'book' already exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	... 43 common frames omitted
+
+2026-02-12T05:56:07.271+05:30  WARN 69652 --- [Book-Store] [  restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "create table customer_orders (total_amount float(53), id bigint not null auto_increment, order_date datetime(6), user_id bigint, phone_number varchar(255), recipient_name varchar(255), shipping_address varchar(255), status varchar(255), primary key (id)) engine=InnoDB" via JDBC [Table 'customer_orders' already exists]
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table customer_orders (total_amount float(53), id bigint not null auto_increment, order_date datetime(6), user_id bigint, phone_number varchar(255), recipient_name varchar(255), shipping_address varchar(255), status varchar(255), primary key (id)) engine=InnoDB" via JDBC [Table 'customer_orders' already exists]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createTables(SchemaCreatorImpl.java:420) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createSequencesTablesConstraints(SchemaCreatorImpl.java:340) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:239) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:172) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:142) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:118) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:256) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:295) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) ~[spring-boot-3.2.0.jar:3.2.0]
+	at com.example.Book_Store.BookStoreApplication.main(BookStoreApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.0.jar:3.2.0]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'customer_orders' already exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	... 43 common frames omitted
+
+2026-02-12T05:56:07.274+05:30  WARN 69652 --- [Book-Store] [  restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "create table users (id bigint not null auto_increment, address varchar(255), city varchar(255), email varchar(255) not null, first_name varchar(255), last_name varchar(255), password varchar(255) not null, phone_number varchar(255), role varchar(255), state varchar(255), username varchar(255) not null, zip_code varchar(255), primary key (id)) engine=InnoDB" via JDBC [Table 'users' already exists]
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table users (id bigint not null auto_increment, address varchar(255), city varchar(255), email varchar(255) not null, first_name varchar(255), last_name varchar(255), password varchar(255) not null, phone_number varchar(255), role varchar(255), state varchar(255), username varchar(255) not null, zip_code varchar(255), primary key (id)) engine=InnoDB" via JDBC [Table 'users' already exists]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createTables(SchemaCreatorImpl.java:420) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createSequencesTablesConstraints(SchemaCreatorImpl.java:340) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:239) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:172) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:142) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:118) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:256) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:295) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) ~[spring-boot-3.2.0.jar:3.2.0]
+	at com.example.Book_Store.BookStoreApplication.main(BookStoreApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.0.jar:3.2.0]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'users' already exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	... 43 common frames omitted
+
+2026-02-12T05:56:07.285+05:30  WARN 69652 --- [Book-Store] [  restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "alter table users add constraint UK_6dotkott2kjsp8vw4d0m25fb7 unique (email)" via JDBC [Duplicate key name 'UK_6dotkott2kjsp8vw4d0m25fb7']
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table users add constraint UK_6dotkott2kjsp8vw4d0m25fb7 unique (email)" via JDBC [Duplicate key name 'UK_6dotkott2kjsp8vw4d0m25fb7']
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createTableConstraints(SchemaCreatorImpl.java:393) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createSequencesTablesConstraints(SchemaCreatorImpl.java:351) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:239) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:172) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:142) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:118) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:256) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:295) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) ~[spring-boot-3.2.0.jar:3.2.0]
+	at com.example.Book_Store.BookStoreApplication.main(BookStoreApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.0.jar:3.2.0]
+Caused by: java.sql.SQLSyntaxErrorException: Duplicate key name 'UK_6dotkott2kjsp8vw4d0m25fb7'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	... 43 common frames omitted
+
+2026-02-12T05:56:07.287+05:30  WARN 69652 --- [Book-Store] [  restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "alter table users add constraint UK_r43af9ap4edm43mmtq01oddj6 unique (username)" via JDBC [Duplicate key name 'UK_r43af9ap4edm43mmtq01oddj6']
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table users add constraint UK_r43af9ap4edm43mmtq01oddj6 unique (username)" via JDBC [Duplicate key name 'UK_r43af9ap4edm43mmtq01oddj6']
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createTableConstraints(SchemaCreatorImpl.java:393) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createSequencesTablesConstraints(SchemaCreatorImpl.java:351) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:239) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:172) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:142) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:118) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:256) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:295) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) ~[spring-boot-3.2.0.jar:3.2.0]
+	at com.example.Book_Store.BookStoreApplication.main(BookStoreApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.0.jar:3.2.0]
+Caused by: java.sql.SQLSyntaxErrorException: Duplicate key name 'UK_r43af9ap4edm43mmtq01oddj6'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-j-8.1.0.jar:8.1.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	... 43 common frames omitted
+
+2026-02-12T05:56:07.481+05:30  INFO 69652 --- [Book-Store] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12T05:56:07.693+05:30  INFO 69652 --- [Book-Store] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-12T05:56:08.010+05:30  WARN 69652 --- [Book-Store] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-12T05:56:08.129+05:30 DEBUG 69652 --- [Book-Store] [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 30 mappings in 'requestMappingHandlerMapping'
+2026-02-12T05:56:08.155+05:30 DEBUG 69652 --- [Book-Store] [  restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-02-12T05:56:08.184+05:30  INFO 69652 --- [Book-Store] [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1bf1ea0c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7fd4a273, org.springframework.security.web.context.SecurityContextHolderFilter@6f4fb8d2, org.springframework.security.web.header.HeaderWriterFilter@153958ff, org.springframework.web.filter.CorsFilter@3912e0a2, org.springframework.security.web.authentication.logout.LogoutFilter@4dedbba8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@196bed76, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b4e2433, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69830dc8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@781655bd, org.springframework.security.web.access.ExceptionTranslationFilter@5ac8194d, org.springframework.security.web.access.intercept.AuthorizationFilter@6a51c21b]
+2026-02-12T05:56:08.235+05:30 DEBUG 69652 --- [Book-Store] [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-02-12T05:56:08.258+05:30 DEBUG 69652 --- [Book-Store] [  restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-02-12T05:56:08.361+05:30  INFO 69652 --- [Book-Store] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-12T05:56:08.380+05:30  INFO 69652 --- [Book-Store] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2026-02-12T05:56:08.384+05:30  INFO 69652 --- [Book-Store] [  restartedMain] c.e.Book_Store.BookStoreApplication      : Started BookStoreApplication in 3.753 seconds (process running for 4.01)
+DataSeeder: Starting...
+DataSeeder: Books and related data deleted.
+Users seeded/updated.
+Processing category: FICTION with 6 books.
+Saved book: The Great Gatsby in FICTION
+Saved book: To Kill a Mockingbird in FICTION
+Saved book: 1984 in FICTION
+Saved book: Pride and Prejudice in FICTION
+Saved book: The Catcher in the Rye in FICTION
+Saved book: The Hobbit in FICTION
+Processing category: NON_FICTION with 6 books.
+Saved book: Sapiens in NON_FICTION
+Saved book: Educated in NON_FICTION
+Saved book: Becoming in NON_FICTION
+Saved book: The Diary of a Young Girl in NON_FICTION
+Saved book: Silent Spring in NON_FICTION
+Saved book: In Cold Blood in NON_FICTION
+Processing category: MYSTERY with 6 books.
+Saved book: The Big Sleep in MYSTERY
+Saved book: Gone Girl in MYSTERY
+Saved book: Girl with the Dragon Tattoo in MYSTERY
+Saved book: The Da Vinci Code in MYSTERY
+Saved book: And Then There Were None in MYSTERY
+Saved book: The Maltese Falcon in MYSTERY
+Processing category: SCIFI with 6 books.
+Saved book: Dune in SCIFI
+Saved book: The Martian in SCIFI
+Saved book: Ender's Game in SCIFI
+Saved book: Neuromancer in SCIFI
+Saved book: Snow Crash in SCIFI
+Saved book: Left Hand of Darkness in SCIFI
+Processing category: HORROR with 6 books.
+Saved book: It in HORROR
+Saved book: The Shining in HORROR
+Saved book: Dracula in HORROR
+Saved book: Frankenstein in HORROR
+Saved book: The Exorcist in HORROR
+Saved book: Pet Sematary in HORROR
+Processing category: ROMANCE with 6 books.
+Saved book: The Notebook in ROMANCE
+Saved book: Outlander in ROMANCE
+Saved book: Me Before You in ROMANCE
+Saved book: The Fault in Our Stars in ROMANCE
+Saved book: Twilight in ROMANCE
+Saved book: Time Traveler's Wife in ROMANCE
+Processing category: BIOGRAPHY with 6 books.
+Saved book: Steve Jobs in BIOGRAPHY
+Saved book: Elon Musk in BIOGRAPHY
+Saved book: Einstein in BIOGRAPHY
+Saved book: Diary of a Young Girl in BIOGRAPHY
+Saved book: Alexander Hamilton in BIOGRAPHY
+Saved book: Churchill in BIOGRAPHY
+Processing category: HISTORY with 6 books.
+Saved book: Guns Germs and Steel in HISTORY
+Saved book: Sapiens in HISTORY
+Saved book: The Silk Roads in HISTORY
+Saved book: 1776 in HISTORY
+Saved book: Genghis Khan in HISTORY
+Saved book: A People's History US in HISTORY
+Processing category: BUSINESS with 6 books.
+Saved book: Zero to One in BUSINESS
+Saved book: Shoe Dog in BUSINESS
+Saved book: Good to Great in BUSINESS
+Saved book: Thinking Fast and Slow in BUSINESS
+Saved book: The Lean Startup in BUSINESS
+Saved book: Atomic Habits in BUSINESS
+Processing category: SELF_HELP with 6 books.
+Saved book: Atomic Habits in SELF_HELP
+Saved book: Power of Now in SELF_HELP
+Saved book: Subtle Art Not Giving in SELF_HELP
+Saved book: You Are a Badass in SELF_HELP
+Saved book: Four Agreements in SELF_HELP
+Saved book: Daring Greatly in SELF_HELP
+Processing category: PROGRAMMING with 6 books.
+Saved book: Clean Code in PROGRAMMING
+Saved book: Pragmatic Programmer in PROGRAMMING
+Saved book: Intro to Algorithms in PROGRAMMING
+Saved book: Design Patterns in PROGRAMMING
+Saved book: Refactoring in PROGRAMMING
+Saved book: Head First Java in PROGRAMMING
+Processing category: SCIENCE with 6 books.
+Saved book: Cosmos in SCIENCE
+Saved book: Brief History of Time in SCIENCE
+Saved book: Selfish Gene in SCIENCE
+Saved book: What If? in SCIENCE
+Saved book: Elegant Universe in SCIENCE
+Saved book: Astrophysics in Hurry in SCIENCE
+Processing category: TECHNOLOGY with 6 books.
+Saved book: The Innovators in TECHNOLOGY
+Saved book: Life 3.0 in TECHNOLOGY
+Saved book: The Shallows in TECHNOLOGY
+Saved book: Superintelligence in TECHNOLOGY
+Saved book: Steve Jobs in TECHNOLOGY
+Saved book: Hackers in TECHNOLOGY
+Processing category: FANTASY with 6 books.
+Saved book: Harry Potter in FANTASY
+Saved book: The Hobbit in FANTASY
+Saved book: Game of Thrones in FANTASY
+Saved book: Name of the Wind in FANTASY
+Saved book: Way of Kings in FANTASY
+Saved book: Lies of Locke Lamora in FANTASY
+Processing category: THRILLER with 6 books.
+Saved book: The Silent Patient in THRILLER
+Saved book: Gone Girl in THRILLER
+Saved book: Girl on the Train in THRILLER
+Saved book: Da Vinci Code in THRILLER
+Saved book: Angels & Demons in THRILLER
+Saved book: Shutter Island in THRILLER
+All categories seeded with 6 books each.
+DataSeeder: Finished successfully.
+2026-02-12T05:57:36.298+05:30  INFO 69652 --- [Book-Store] [nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-12T05:57:36.299+05:30  INFO 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-12T05:57:36.300+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-02-12T05:57:36.300+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-02-12T05:57:36.300+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2026-02-12T05:57:36.302+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7fac610c
+2026-02-12T05:57:36.302+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3d2b8d68
+2026-02-12T05:57:36.304+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-02-12T05:57:36.304+05:30  INFO 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2026-02-12T05:57:36.339+05:30  WARN 69652 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-02-12T05:57:36.360+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2026-02-12T05:57:36.362+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.HomeController#home(Model)
+2026-02-12T05:57:36.423+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T05:57:36.897+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:36.900+05:30  WARN 69652 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/js/script.js' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-02-12T05:57:36.906+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T05:57:36.906+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T05:57:36.906+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:57:36.906+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:57:36.918+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:36.918+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:37.009+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2026-02-12T05:57:37.009+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AuthController#loginPage(String, Model)
+2026-02-12T05:57:37.022+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T05:57:37.041+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:37.051+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2026-02-12T05:57:37.051+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AuthController#loginPage(String, Model)
+2026-02-12T05:57:37.053+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T05:57:37.065+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:37.082+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T05:57:37.083+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:57:37.083+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T05:57:37.084+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:57:37.087+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:37.088+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:37.103+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2026-02-12T05:57:37.104+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AuthController#loginPage(String, Model)
+2026-02-12T05:57:37.104+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T05:57:37.113+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:39.505+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2026-02-12T05:57:39.505+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AuthController#loginPage(String, Model)
+2026-02-12T05:57:39.505+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T05:57:39.514+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:39.535+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T05:57:39.536+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T05:57:39.536+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:57:39.537+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:57:39.539+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:39.540+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:39.553+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2026-02-12T05:57:39.554+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AuthController#loginPage(String, Model)
+2026-02-12T05:57:39.555+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T05:57:39.562+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:41.024+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2026-02-12T05:57:41.025+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AuthController#loginPage(String, Model)
+2026-02-12T05:57:41.026+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T05:57:41.040+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:41.058+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T05:57:41.059+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:57:41.060+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T05:57:41.060+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:57:41.063+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:41.063+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:41.079+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2026-02-12T05:57:41.080+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AuthController#loginPage(String, Model)
+2026-02-12T05:57:41.083+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T05:57:41.092+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:43.100+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2026-02-12T05:57:43.100+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.HomeController#home(Model)
+2026-02-12T05:57:43.184+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T05:57:43.201+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:43.215+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T05:57:43.215+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T05:57:43.216+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:57:43.216+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:57:43.219+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:43.219+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:43.231+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2026-02-12T05:57:43.231+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AuthController#loginPage(String, Model)
+2026-02-12T05:57:43.232+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T05:57:43.239+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:45.016+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/shop", parameters={}
+2026-02-12T05:57:45.017+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.HomeController#shop(Model, String, Category, int, int)
+2026-02-12T05:57:45.052+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T05:57:45.125+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T05:57:45.125+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T05:57:45.126+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:57:45.126+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:57:45.129+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:45.129+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:45.132+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:45.966+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2026-02-12T05:57:45.967+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AuthController#loginPage(String, Model)
+2026-02-12T05:57:45.967+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T05:57:45.980+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:46.391+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2026-02-12T05:57:46.391+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AuthController#loginPage(String, Model)
+2026-02-12T05:57:46.391+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T05:57:46.404+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:46.423+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T05:57:46.423+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:57:46.425+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T05:57:46.425+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:57:46.426+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:46.426+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:46.440+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2026-02-12T05:57:46.441+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.AuthController#loginPage(String, Model)
+2026-02-12T05:57:46.442+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T05:57:46.448+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:50.874+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/my-orders?continue", parameters={masked}
+2026-02-12T05:57:50.874+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.OrderController#myOrders(Principal, Model)
+2026-02-12T05:57:50.894+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T05:57:50.906+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:50.923+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T05:57:50.923+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T05:57:50.924+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:57:50.924+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:57:50.926+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:50.926+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:50.939+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T05:57:50.939+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:57:50.942+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T05:57:50.944+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T05:57:50.944+05:30  WARN 69652 --- [Book-Store] [nio-8082-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T05:57:50.946+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T05:57:50.946+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T05:57:50.948+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:53.619+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/my-orders", parameters={}
+2026-02-12T05:57:53.619+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.OrderController#myOrders(Principal, Model)
+2026-02-12T05:57:53.628+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T05:57:53.661+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:53.686+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T05:57:53.687+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:57:53.687+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T05:57:53.687+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:57:53.690+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:53.691+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:57:53.701+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T05:57:53.702+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:57:53.703+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T05:57:53.703+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T05:57:53.704+05:30  WARN 69652 --- [Book-Store] [nio-8082-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T05:57:53.704+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T05:57:53.704+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T05:57:53.704+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:10.782+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2026-02-12T05:59:10.782+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.HomeController#home(Model)
+2026-02-12T05:59:10.787+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T05:59:10.792+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:10.809+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T05:59:10.809+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:59:10.810+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T05:59:10.810+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:59:10.811+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:10.811+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:10.821+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T05:59:10.821+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:59:10.827+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T05:59:10.827+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T05:59:10.827+05:30  WARN 69652 --- [Book-Store] [nio-8082-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T05:59:10.827+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T05:59:10.829+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T05:59:10.829+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:12.697+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/shop", parameters={}
+2026-02-12T05:59:12.698+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.HomeController#shop(Model, String, Category, int, int)
+2026-02-12T05:59:12.707+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T05:59:12.808+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T05:59:12.810+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:59:12.810+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T05:59:12.810+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:59:12.813+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:12.815+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:12.832+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:12.858+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T05:59:12.858+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:59:12.859+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T05:59:12.859+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T05:59:12.860+05:30  WARN 69652 --- [Book-Store] [io-8082-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T05:59:12.860+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T05:59:12.860+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T05:59:12.860+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:19.691+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/cart", parameters={}
+2026-02-12T05:59:19.691+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.CartController#viewCart(Model, Principal)
+2026-02-12T05:59:19.722+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T05:59:19.733+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:19.754+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T05:59:19.754+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T05:59:19.754+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:59:19.754+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:59:19.758+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:19.758+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:19.767+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T05:59:19.767+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:59:19.769+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T05:59:19.770+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T05:59:19.770+05:30  WARN 69652 --- [Book-Store] [nio-8082-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T05:59:19.770+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T05:59:19.771+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T05:59:19.771+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:22.143+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/checkout/address", parameters={}
+2026-02-12T05:59:22.143+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.CheckoutController#selectAddressPage(Principal, Model)
+2026-02-12T05:59:22.160+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T05:59:22.179+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:22.201+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T05:59:22.201+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T05:59:22.202+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:59:22.202+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:59:22.204+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:22.204+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:22.217+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T05:59:22.218+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:59:22.220+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T05:59:22.220+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T05:59:22.220+05:30  WARN 69652 --- [Book-Store] [nio-8082-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T05:59:22.220+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T05:59:22.221+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T05:59:22.221+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:27.193+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/checkout/summary", parameters={masked}
+2026-02-12T05:59:27.194+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.CheckoutController#checkoutSummary(Long, Principal, Model)
+2026-02-12T05:59:27.208+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T05:59:27.226+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:27.244+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T05:59:27.244+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T05:59:27.244+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:59:27.244+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:59:27.250+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:27.250+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:27.267+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T05:59:27.268+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:59:27.270+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T05:59:27.271+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T05:59:27.272+05:30  WARN 69652 --- [Book-Store] [nio-8082-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T05:59:27.272+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T05:59:27.272+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T05:59:27.272+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:30.932+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/checkout/place-order", parameters={masked}
+2026-02-12T05:59:30.933+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.CheckoutController#placeOrder(String, Long, Principal, RedirectAttributes)
+2026-02-12T05:59:31.030+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2026-02-12T05:59:31.032+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2026-02-12T05:59:31.038+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/payment", parameters={}
+2026-02-12T05:59:31.038+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.PaymentController#paymentPage()
+2026-02-12T05:59:31.044+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T05:59:31.048+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:31.068+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T05:59:31.069+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:59:31.070+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T05:59:31.070+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T05:59:31.070+05:30  WARN 69652 --- [Book-Store] [nio-8082-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T05:59:31.070+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T05:59:31.070+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T05:59:31.071+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:36.690+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/payment/process", parameters={masked}
+2026-02-12T05:59:36.690+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.PaymentController#processPayment(String)
+2026-02-12T05:59:36.692+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2026-02-12T05:59:36.693+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2026-02-12T05:59:36.699+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/order-success?payment=cod", parameters={masked}
+2026-02-12T05:59:36.699+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.OrderController#orderSuccess()
+2026-02-12T05:59:36.704+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T05:59:36.708+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:36.728+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T05:59:36.728+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:59:36.731+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T05:59:36.731+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T05:59:36.731+05:30  WARN 69652 --- [Book-Store] [nio-8082-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T05:59:36.731+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T05:59:36.732+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T05:59:36.732+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:38.564+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2026-02-12T05:59:38.564+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.HomeController#home(Model)
+2026-02-12T05:59:38.568+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T05:59:38.576+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:38.589+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T05:59:38.589+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T05:59:38.590+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:59:38.590+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:59:38.592+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:38.592+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:38.599+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T05:59:38.600+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:59:38.600+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T05:59:38.600+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T05:59:38.600+05:30  WARN 69652 --- [Book-Store] [nio-8082-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T05:59:38.600+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T05:59:38.601+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T05:59:38.601+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:41.683+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/my-orders", parameters={}
+2026-02-12T05:59:41.683+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.OrderController#myOrders(Principal, Model)
+2026-02-12T05:59:41.690+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T05:59:41.709+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:41.731+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T05:59:41.731+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T05:59:41.732+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:59:41.733+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:59:41.734+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:41.734+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T05:59:41.744+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T05:59:41.744+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T05:59:41.745+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T05:59:41.745+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T05:59:41.746+05:30  WARN 69652 --- [Book-Store] [nio-8082-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T05:59:41.747+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T05:59:41.747+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T05:59:41.747+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:00:58.927+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/my-orders", parameters={}
+2026-02-12T06:00:58.927+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.OrderController#myOrders(Principal, Model)
+2026-02-12T06:00:58.935+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:00:58.947+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:00:58.964+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:00:58.964+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:00:58.966+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:00:58.967+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:00:58.967+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:00:58.969+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:00:58.977+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:00:58.978+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:00:58.980+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:00:58.981+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:00:58.981+05:30  WARN 69652 --- [Book-Store] [nio-8082-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:00:58.981+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:00:58.981+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:00:58.981+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:03:03.017+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/my-orders", parameters={}
+2026-02-12T06:03:03.018+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.OrderController#myOrders(Principal, Model)
+2026-02-12T06:03:03.024+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:03:03.032+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:03:03.046+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:03:03.046+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:03:03.046+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:03:03.046+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:03:03.049+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:03:03.049+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:03:03.058+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:03:03.058+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:03:03.060+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:03:03.060+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:03:03.060+05:30  WARN 69652 --- [Book-Store] [nio-8082-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:03:03.060+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:03:03.060+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:03:03.062+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:03:06.742+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/my-orders", parameters={}
+2026-02-12T06:03:06.742+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.OrderController#myOrders(Principal, Model)
+2026-02-12T06:03:06.747+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:03:06.758+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:03:06.774+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:03:06.774+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:03:06.774+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:03:06.774+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:03:06.778+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:03:06.778+05:30 DEBUG 69652 --- [Book-Store] [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:03:06.786+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:03:06.786+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:03:06.787+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:03:06.787+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:03:06.788+05:30  WARN 69652 --- [Book-Store] [nio-8082-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:03:06.788+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:03:06.788+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:03:06.789+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:03:54.069+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/my-orders", parameters={}
+2026-02-12T06:03:54.069+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Book_Store.controller.OrderController#myOrders(Principal, Model)
+2026-02-12T06:03:54.076+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-12T06:03:54.086+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:03:54.110+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/js/script.js", parameters={}
+2026-02-12T06:03:54.110+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:03:54.110+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2026-02-12T06:03:54.110+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:03:54.113+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:03:54.113+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-02-12T06:03:54.122+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-02-12T06:03:54.122+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-12T06:03:54.125+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2026-02-12T06:03:54.126+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Book_Store.controller.GlobalExceptionHandler#handleException(Exception, Model)
+2026-02-12T06:03:54.126+05:30  WARN 69652 --- [Book-Store] [nio-8082-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-12T06:03:54.126+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error"; model={error=No static resource favicon.ico.}]
+2026-02-12T06:03:54.127+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-02-12T06:03:54.127+05:30 DEBUG 69652 --- [Book-Store] [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  09:59 min
+[INFO] Finished at: 2026-02-12T06:06:02+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.2.0:run (default-cli) on project Book-Store: Process terminated with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

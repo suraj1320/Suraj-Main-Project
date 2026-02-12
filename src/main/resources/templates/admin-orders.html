@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Orders | SAGA BOOKS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .card-header {
+            background-color: #fff;
+            border-bottom: 1px solid #eee;
+            font-weight: 600;
+        }
+
+        .status-badge {
+            padding: 0.35em 0.65em;
+            font-size: 0.75em;
+            font-weight: 700;
+            border-radius: 10rem;
+        }
+
+        .status-Pending {
+            background-color: #ffc107;
+            color: #000;
+        }
+
+        .status-Completed {
+            background-color: #198754;
+            color: #fff;
+        }
+
+        .status-Cancelled {
+            background-color: #dc3545;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">SAGA ADMIN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" th:href="@{/admin}">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link active" th:href="@{/admin/orders}">Orders</a></li>
+                    <li class="nav-item"><a class="nav-link" th:href="@{/admin/users}">Users</a></li>
+                    <li class="nav-item"><a class="nav-link" th:href="@{/shop}">View Shop</a></li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><span class="nav-link text-light">Welcome, Admin</span></li>
+                    <li class="nav-item"><a class="nav-link text-danger" th:href="@{/logout}">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                Customer Orders
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Date</th>
+                                <th>Customer</th>
+                                <th>Recipient</th>
+                                <th>Address</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr th:each="order : ${orders}">
+                                <td class="fw-bold" th:text="${'#' + order.id}">#123</td>
+                                <td th:text="${#temporals.format(order.orderDate, 'dd-MM-yyyy HH:mm')}">Date</td>
+                                <td>
+                                    <div th:if="${order.user != null}">
+                                        <div class="fw-bold" th:text="${order.user.username}">User</div>
+                                        <small class="text-muted" th:text="${order.user.email}">Email</small>
+                                    </div>
+                                    <span th:if="${order.user == null}" class="text-muted">Guest</span>
+                                </td>
+                                <td>
+                                    <div th:text="${order.recipientName}">Name</div>
+                                    <small class="text-muted" th:text="${order.phoneNumber}">Phone</small>
+                                </td>
+                                <td style="max-width: 250px;">
+                                    <small th:text="${order.shippingAddress}">Address</small>
+                                </td>
+                                <td class="fw-bold" th:text="${'$' + order.totalAmount}">$0.00</td>
+                                <td>
+                                    <span class="status-badge" th:classappend="${'status-' + order.status}"
+                                        th:text="${order.status}">Pending</span>
+                                </td>
+                            </tr>
+                            <tr th:if="${orders.empty}">
+                                <td colspan="7" class="text-center py-4 text-muted">No orders found.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

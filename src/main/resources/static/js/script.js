@@ -178,4 +178,16 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = '/checkout/address';
         };
     }
+
+    // Manual cart clear function
+    window.clearCartManually = function () {
+        if (confirm('Are you sure you want to clear your entire cart?')) {
+            localStorage.removeItem('saga_cart');
+            updateCartCount();
+            if (cartItemsContainer) {
+                renderCart();
+            }
+            alert('Cart cleared successfully!');
+        }
+    };
 });

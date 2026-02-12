@@ -42,6 +42,16 @@ public class CheckoutController {
         List<Address> addresses = addressService.getAddressesByUser(user);
         model.addAttribute("addresses", addresses);
         model.addAttribute("user", user);
+
+        List<String> states = java.util.Arrays.asList(
+                "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat",
+                "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra",
+                "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim",
+                "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal",
+                "Andaman and Nicobar Islands", "Chandigarh", "Dadra and Nagar Haveli and Daman and Diu",
+                "Lakshadweep", "Delhi", "Puducherry", "Ladakh", "Jammu and Kashmir");
+        model.addAttribute("states", states);
+
         return "checkout-address";
     }
 
@@ -137,7 +147,13 @@ public class CheckoutController {
         } catch (Exception e) {
             e.printStackTrace();
             System.err.println("Checkout Error: " + e.getMessage());
-            redirectAttributes.addFlashAttribute("error", "Order Failed: " + e.getMessage());
+            String errorMessage = "Order Failed: " + e.getMessage();
+            if (e.getMessage().contains("Book details not found")) {
+                errorMessage = "Your cart contains items that are no longer available. Please clear your cart and try again.";
+            } else if (e.getMessage().contains("Insufficient stock")) {
+                errorMessage = "Some items in your cart are out of stock.";
+            }
+            redirectAttributes.addFlashAttribute("error", errorMessage);
             return "redirect:/shop";
         }
     }

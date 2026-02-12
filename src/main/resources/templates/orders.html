@@ -7,39 +7,87 @@
 
     <header th:replace="~{fragments/header :: header}"></header>
 
-    <div class="container" style="padding-top: 120px;">
-        <h2 class="section-title">TRANSACTION LOG</h2>
-        <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">User: <span th:text="${username}"
-                style="color: var(--accent-color);"></span></p>
+    <div class="container"
+        style="padding-top: 100px; padding-bottom: 50px; display: flex; flex-direction: column; align-items: center; gap: 2rem;">
 
-        <div class="glass-panel" style="padding: 2rem; overflow-x: auto;">
-            <table style="width: 100%;">
-                <thead>
-                    <tr>
-                        <th>Order ID</th>
-                        <th>Date</th>
-                        <th>Items</th>
-                        <th>Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr th:each="order : ${orders}">
-                        <td th:text="${order.id}">#123</td>
-                        <td th:text="${order.orderDate}">2026-01-01</td>
-                        <td>
-                            <ul style="list-style: none; padding: 0;">
-                                <li th:each="item : ${order.items}"
-                                    style="font-size: 0.9rem; color: var(--text-muted);">
-                                    <span th:text="${item.bookTitle}">Book Title</span>
-                                    (x<span th:text="${item.quantity}">1</span>)
-                                </li>
-                            </ul>
-                        </td>
-                        <td th:text="${'$' + order.totalAmount}" style="color: var(--accent-color); font-weight: bold;">
-                            $29.99</td>
-                    </tr>
-                </tbody>
-            </table>
+        <h2 class="section-title" style="margin-bottom: 1rem;">My Orders</h2>
+
+        <!-- Empty State -->
+        <div th:if="${#lists.isEmpty(orders)}" style="text-align: center; color: var(--text-muted);">
+            <p>You haven't placed any orders yet.</p>
+            <a th:href="@{/shop}" class="btn-primary" style="margin-top: 1rem; display: inline-block;">Start
+                Shopping</a>
+        </div>
+
+        <!-- Order Card Loop -->
+        <div th:each="order : ${orders}"
+            style="width: 100%; max-width: 700px; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); overflow: hidden; margin-bottom: 2rem; border: 1px solid rgba(0,0,0,0.05);">
+
+            <!-- Card Header -->
+            <div
+                style="padding: 1.5rem 2rem; background: #fff; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="font-weight: 700; color: #2d3436; font-size: 1.1rem;"># Order [[${order.id}]]</span>
+                </div>
+                <span th:text="${order.status}"
+                    th:style="${order.status == 'Pending' ? 'background: #fff3cd; color: #856404; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;' : (order.status == 'Completed' ? 'background: #d4edda; color: #155724; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;' : 'background: #e2e3e5; color: #383d41; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;')}">Pending</span>
+            </div>
+
+            <!-- Card Body -->
+            <div style="padding: 2rem;">
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+                    <div>
+                        <p
+                            style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: #b2bec3; margin-bottom: 0.5rem; font-weight: 600;">
+                            Order Date</p>
+                        <p style="font-weight: 600; color: #2d3436;"
+                            th:text="${#temporals.format(order.orderDate, 'dd MMM yyyy')}">12 Feb 2026</p>
+                    </div>
+                    <div>
+                        <p
+                            style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: #b2bec3; margin-bottom: 0.5rem; font-weight: 600;">
+                            Total Amount</p>
+                        <p style="font-weight: 700; color: var(--accent-color); font-size: 1.2rem;"
+                            th:text="${'$' + order.totalAmount}">$87.76</p>
+                    </div>
+                    <div>
+                        <p
+                            style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: #b2bec3; margin-bottom: 0.5rem; font-weight: 600;">
+                            Payment Method</p>
+                        <p style="font-weight: 600; color: #2d3436;">COD</p> <!-- Hardcoded as per request context -->
+                    </div>
+                    <div>
+                        <p
+                            style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: #b2bec3; margin-bottom: 0.5rem; font-weight: 600;">
+                            Delivery Address</p>
+                        <p style="font-weight: 500; color: #636e72; font-size: 0.9rem; line-height: 1.5;"
+                            th:text="${order.shippingAddress}">Dombivli, MH</p>
+                    </div>
+                </div>
+
+                <div style="border-top: 1px solid #f0f0f0; padding-top: 1.5rem;">
+                    <p style="font-size: 0.9rem; font-weight: 700; color: #2d3436; margin-bottom: 1rem;">Order Items
+                        (<span th:text="${#lists.size(order.items)}">1</span>)</p>
+
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div th:each="item : ${order.items}" style="display: flex; gap: 1rem; align-items: center;">
+                            <img th:src="${item.book.image}" alt="Book Cover"
+                                style="width: 50px; height: 75px; object-fit: cover; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                            <div style="flex-grow: 1;">
+                                <p style="font-weight: 600; color: #2d3436; margin-bottom: 0.2rem;"
+                                    th:text="${item.book.title}">Title</p>
+                                <p style="font-size: 0.8rem; color: #636e72;">Qty: <span
+                                        th:text="${item.quantity}">2</span> &times; $<span
+                                        th:text="${item.price}">20.0</span></p>
+                            </div>
+                            <span style="font-weight: 600; color: #2d3436;"
+                                th:text="${'$' + (item.quantity * item.price)}">$40.0</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 

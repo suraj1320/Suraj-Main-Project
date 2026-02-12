@@ -21,10 +21,30 @@
             <ul style="list-style: none;">
                 <li style="margin-bottom: 0.5rem;"><a th:href="@{/shop}" style="color: var(--text-color);">All Books</a>
                 </li>
-                <li th:each="cat : ${categories}" style="margin-bottom: 0.5rem;">
-                    <a th:href="@{/shop(category=${cat})}" th:text="${cat}"
-                        style="color: var(--text-muted); font-size: 0.9rem;">Category</a>
-                </li>
+                <li style="margin-bottom: 0.5rem;"><a th:href="@{/shop(category='FICTION')}"
+                        style="color: var(--text-muted); font-size: 0.9rem;">Fiction</a></li>
+                <li style="margin-bottom: 0.5rem;"><a th:href="@{/shop(category='NON_FICTION')}"
+                        style="color: var(--text-muted); font-size: 0.9rem;">Non-Fiction</a></li>
+                <li style="margin-bottom: 0.5rem;"><a th:href="@{/shop(category='SCIENCE')}"
+                        style="color: var(--text-muted); font-size: 0.9rem;">Science</a></li>
+                <li style="margin-bottom: 0.5rem;"><a th:href="@{/shop(category='HISTORY')}"
+                        style="color: var(--text-muted); font-size: 0.9rem;">History</a></li>
+                <li style="margin-bottom: 0.5rem;"><a th:href="@{/shop(category='TECHNOLOGY')}"
+                        style="color: var(--text-muted); font-size: 0.9rem;">Technology</a></li>
+                <li style="margin-bottom: 0.5rem;"><a th:href="@{/shop(category='PROGRAMMING')}"
+                        style="color: var(--text-muted); font-size: 0.9rem;">Programming</a></li>
+                <li style="margin-bottom: 0.5rem;"><a th:href="@{/shop(category='BUSINESS')}"
+                        style="color: var(--text-muted); font-size: 0.9rem;">Business</a></li>
+                <li style="margin-bottom: 0.5rem;"><a th:href="@{/shop(category='BIOGRAPHY')}"
+                        style="color: var(--text-muted); font-size: 0.9rem;">Biography</a></li>
+                <li style="margin-bottom: 0.5rem;"><a th:href="@{/shop(category='FANTASY')}"
+                        style="color: var(--text-muted); font-size: 0.9rem;">Fantasy</a></li>
+                <li style="margin-bottom: 0.5rem;"><a th:href="@{/shop(category='THRILLER')}"
+                        style="color: var(--text-muted); font-size: 0.9rem;">Thriller</a></li>
+                <li style="margin-bottom: 0.5rem;"><a th:href="@{/shop(category='ROMANCE')}"
+                        style="color: var(--text-muted); font-size: 0.9rem;">Romance</a></li>
+                <li style="margin-bottom: 0.5rem;"><a th:href="@{/shop(category='OTHER')}"
+                        style="color: var(--text-muted); font-size: 0.9rem;">Other</a></li>
             </ul>
         </aside>
 
@@ -92,6 +112,27 @@
 
     <footer th:replace="~{fragments/footer :: footer}"></footer>
 
+    <script th:inline="javascript">
+        /*<![CDATA[*/
+        document.addEventListener('DOMContentLoaded', function () {
+            var errorMsg = /*[[${error}]]*/ null;
+            if (errorMsg && (errorMsg.includes("no longer available") || errorMsg.includes("out of stock"))) {
+                console.log("Server reported invalid cart items. Clearing local cart.");
+                localStorage.removeItem('saga_cart');
+
+                // Optional: Update cart count immediately if the function exists
+                var cartCountEl = document.querySelector('.cart-count');
+                if (cartCountEl) cartCountEl.textContent = '0';
+
+                // Show a user-friendly alert or toast
+                alert("Your cart has been cleared because some items are no longer available in our inventory.");
+
+                // Redirect to shop to clear the error parameter from URL if desired, 
+                // or just let them browse.
+            }
+        });
+        /*]]>*/
+    </script>
 </body>
 
 </html>
